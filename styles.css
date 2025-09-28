@@ -1,0 +1,62 @@
+a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: #555;
+}
+
+.hero-image {
+  background-image: url("./images/icecream.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 500px;   /* 원하는 크기 */
+  height: 500px;  /* 원하는 크기 */
+}
+
+/* 기본: 데스크탑에서는 안 보임 */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 4px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* 모바일 전용 */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* 모바일에서만 보임 */
+  }
+
+  nav ul {
+    display: none; /* 기본 숨김 */
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  nav ul.active {
+    display: flex; /* 버튼 클릭 시 보이게 */
+  }
+}
+
