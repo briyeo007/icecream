@@ -1,62 +1,264 @@
-a.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: background 0.3s ease;
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a.btn:hover {
-  background-color: #555;
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+/* Header */
+header {
+  background: #2e2e2e;
+  padding: 15px 30px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 img {
+  height: 40px;
+}
+
+.menu-container ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu-container a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Hero Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 10%;
+  background: #f9f9f9;
+}
+
+.hero-text span {
+  font-size: 14px;
+  color: #555;
+}
+
+.hero-text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero-text p {
+  font-size: 16px;
+  margin: 20px 0;
+  color: #333;
+}
+
+.btn {
+  background: #353439;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 .hero-image {
-  background-image: url("./images/icecream.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  width: 500px;   /* 원하는 크기 */
-  height: 500px;  /* 원하는 크기 */
+  width: 400px;
+  height: 400px;
+  background: url("images/icecream.png") no-repeat center/contain;
 }
 
-/* 기본: 데스크탑에서는 안 보임 */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 22px;
-  background: none;
+/* Swiper Commit Section */
+.commit-wrapper {
+  padding: 60px 10%;
+}
+
+.commit-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.commit-wrapper h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Our Picks */
+#picks {
+  padding: 80px 10%;
+  background: #fff;
+  text-align: center;
+}
+
+#picks h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.picks-swiper .swiper-slide {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.picks-swiper img {
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+/* About Section */
+#about {
+  background: url("images/about.png") no-repeat center/cover;
+  color: #fff;
+  text-align: left;
+  padding: 100px 10%;
+}
+
+#about h2 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+#about strong {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.bg_our-promise {
+  background: url("images/commitment.png") no-repeat center/cover;
+}
+
+.bg_community {
+  background: url("images/community.png") no-repeat center/cover;
+}
+
+.bg_events {
+  background: url("images/events.png") no-repeat center/cover;
+}
+
+
+/* Info Sections (Our Promise / Community / Events) */
+#info-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#info-sections > div {
+  display: flex;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 40px;
+}
+
+#info-sections h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+#info-sections p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Instagram */
+#instagram {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 80px 10%;
+}
+
+#instagram h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.instagram-swiper .swiper-slide {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.instagram-swiper img {
+  width: 100%;
+  display: block;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+  padding: 80px 10%;
+  background: #fff;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin: 20px 0;
+}
+
+#contact form {
+  margin-top: 20px;
+}
+
+#contact input {
+  padding: 12px;
+  width: 280px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#contact button {
+  padding: 12px 20px;
+  margin-left: 10px;
   border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.menu-toggle span {
+/* Footer */
+footer {
+  background: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer .logo {
+  font-size: 20px;
+  font-weight: bold;
   display: block;
-  height: 4px;
-  background: #333;
-  border-radius: 2px;
+  margin-bottom: 10px;
 }
 
-/* 모바일 전용 */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex; /* 모바일에서만 보임 */
-  }
-
-  nav ul {
-    display: none; /* 기본 숨김 */
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 10px;
-  }
-
-  nav ul.active {
-    display: flex; /* 버튼 클릭 시 보이게 */
-  }
+footer p {
+  font-size: 14px;
+  margin: 5px 0;
 }
 
+footer .social a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
