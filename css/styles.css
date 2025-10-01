@@ -1,14 +1,41 @@
 /* 기본 리셋 */
-* {
+*, *::before, *::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   color: #222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
 }
 
 /* Header */
@@ -21,6 +48,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header h1 img {
@@ -43,6 +71,69 @@ header {
   display: none;
 }
 
+.menu-container { 
+  display: block; 
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200px 10%;
+  padding-top: 200px;
+  background: #f9f9f9;
+}
+
+.hero-text span {
+  display: block;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.hero-text h2 {
+  color: #1B1B1B;
+  font-family: "Just Another Hand";
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8px 0 14px;
+}
+
+.hero-text p {
+  display: block;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6; /* 133.333% */
+  margin:0 0 16px 
+}
+
+.hero-image {
+  width: 578.397px;
+  height: 595.266px;
+  flex-shrink: 0;
+  aspect-ratio: 578.40/595.27;
+  background: url("../images/icecream.png") no-repeat center/contain;
+  position:absolute; right:8%; top:200px;
+}
 
 .btn {
   background: #353439;
@@ -51,6 +142,7 @@ header {
   border-radius: 4px;
   text-decoration: none;
   font-size: 15px;
+  margin-bottom: 50px;
 }
 
 .swiper-slide .thumb img {
@@ -61,9 +153,9 @@ header {
 
 .swiper-slide {
   width: 331px;
-height: 380px;
-flex-shrink: 0;
-background: #FFF;
+  height: 380px;
+  flex-shrink: 0;
+  background: #FFF;
 }
 
 /* Footer */
@@ -92,35 +184,183 @@ footer .social a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 368px) {
+/* Tablet */
+@media screen and (max-width: 768px) {
+  header .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+  }
 
+  header .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    right: 0;
+    background: #2e2e2e;
+    padding: 16px 20px;
+    z-index: 9999;
+  }
 
-.header {
+  header .menu-container.active { 
+    display: block; 
+  }
+
+  header .menu-container ul { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 14px; 
+  }
+
+.hero-text span {
+  width: 198.496px;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.hero-text h2 {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-   background: #2e2e2e;
-  padding: 15px 30px;
+  width: 707px;
+  height: 90px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #1B1B1B;
+  font-family: "Just Another Hand";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.header h1 img {
-  height: 40px;
+.hero-text p {
+  width: 352.962px;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
 }
 
-.menu-container ul {
-  display: flex;
-  list-style: none;
-  gap: 20px;
+.hero-image {
+  width: 441.787px;
+  height: 456.513px;
+  flex-shrink: 0;
+  aspect-ratio: 441.79/456.51;
+
+}
+  
 }
 
-.menu-container a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
+/* Mobile */
+@media screen and (max-width: 360px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e2e2e;
+    height: 100px;
+  }
+
+  .header h1 img {
+    height: 40px;
+  }
+
+  header .menu-container ul {
+    display: flex; 
+    flex-direction: column; 
+    gap: 14px; 
+  }
+
+  .menu-container a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  header .menu-toggle {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    color: #fff;
+  }
+
+  header .menu-container { 
+    display: none; 
+    position: absolute;
+    top: 100px; /* 헤더 높이에 맞춰 조정 */
+    left: 0; 
+    right: 0;
+    background: #2e2e2e;
+    padding: 16px 20px;
+    z-index: 1000;
+  }
+
+  header .menu-container.active {
+    display: block; /* 또는 flex */
+  }
+
+  #hero {
+     padding:36px 16px 220px; 
+     position:relative;
+  }
+
+  #hero .inner{ 
+    position:relative; 
+  }
+
+  .hero-text{ 
+    padding-right:160px; 
+    position:relative;
+    z-index:2;
+  }
+
+  .hero-text span {
+    display: flex;
+    width: 138px;
+    height: 22px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+    margin-bottom:6px;
 }
 
-.menu-toggle {
-  display: none;
+.hero-text h2 {
+  color: #1B1B1B;
+  text-shadow: 0 4px 4px rgba(255, 255, 255, 0.47);
+  font-family: "Just Another Hand";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 300px;
+  margin:6px 0 8px;
+}
+
+.hero-text p {
+  width: auto;
+  height: auto;
+  margin: 0 0 30px;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 142.857% */
+  word-break: keep-all;
 }
 
 
@@ -133,12 +373,36 @@ footer .social a {
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+    background: #353439;
+    
   }
-  
+
+  .hero-image {
+    width: 300.571px;
+    height: 303.897px;
+    flex-shrink: 0;
+    aspect-ratio: 300.57/303.90;
+    position:absolute; right:130px; top: 220px;   /* 텍스트와 겹치게 */
+    background-size:contain;
+    z-index:0; 
+    pointer-events:none;
+  }
+
   .swiper-slide {
     width: 204px;
     height: 278.133px;
     flex-shrink: 0;
   }
+}
 
+/* Desktop 이상 */
+@media (min-width: 360px) {
+  .menu-container ul { 
+    display: flex; 
+    gap: 20px; 
+  }
+  .menu-container { 
+    position: static; 
+    background: transparent; 
+  }
 }
