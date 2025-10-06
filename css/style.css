@@ -1,220 +1,415 @@
 /* 기본 리셋 */
 *, *::before, *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-html, body {
-    height: 100%;
-}
-  
-body {
-    font-family: 'Noto Sans KR', sans-serif;
-    line-height: 1.5;
-    color: #222;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-}
-  
-img, video, svg {
-    display: block;
-    max-width: 100%;
-}
-  
-a {
-    color: inherit;
-    text-decoration: none;
-}
-  
-ul, ol {
-    list-style: none;
-}
-  
-button {
-    background: none;
-    border: 0;
-    cursor: pointer;
-    font: inherit;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.5;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img, video, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #2e2e2e;
-    height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2e2e2e;
+  height: 100px;
 }
 
 .header h1 {
-    margin: 8.888%;
+  margin: 8.888%;
 }
 
 .header h1 img {
-    height: 40px;
+  height: 40px;
 }
 
 header .menu-container ul {
-    display: flex; 
-    flex-direction: column; 
-    gap: 14px; 
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .menu-container a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 30px;
-    height: 5px;
-    background-color: #fff;
-    text-indent: -9999px;
-    margin-bottom: 5px;
+  display: block;
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  text-indent: -9999px;
+  margin-bottom: 5px;
 }
 
-  header .menu-toggle {
-    align-items: center; 
-    gap: 8px; 
-    color: #fff;
-    margin-right: 8.333%;
+header .menu-toggle {
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  margin-right: 8.333%;
 }
 
-header .menu-container { 
-    display: none; 
-    position: absolute;
-    top: 100px; /* 헤더 높이에 맞춰 조정 */
-    left: 0; 
-    right: 0;
-    background: #2e2e2e;
-    padding: 16px 20px;
-    z-index: 1000;
+header .menu-container {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  background: #2e2e2e;
+  padding: 16px 20px;
+  z-index: 1000;
 }
 
 header .menu-container.active {
-    display: block; /* 또는 flex */
+  display: block;
 }
 
+/* Hero */
 #hero {
-    padding:8.888%; 
-    position:relative;
+  padding: 8.888%;
+  position: relative;
 }
 
-#hero .inner{ 
-    position:relative; 
+#hero .inner {
+  position: relative;
+  padding-bottom: 340px;
 }
 
-.hero-text{ 
- 
-    position:relative;
-    z-index:2;
+.hero-text {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-text span {
-    display: flex;
-    width: 138px;
-    height: 22px;
-    flex-direction: column;
-    justify-content: center;
-    flex-shrink: 0;
-    color: #000;
-    font-family: "Noto Sans KR";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
-    margin-bottom:6px;
+  display: flex;
+  width: 138px;
+  height: 22px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 6px;
 }
 
 .hero-text h2 {
-    color: #1B1B1B;
-    text-shadow: 0 4px 4px rgba(255, 255, 255, 0.47);
-    font-family: "Just Another Hand";
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 300px;
-    margin:6px 0 8px;
+  color: #1B1B1B;
+  text-shadow: 0 4px 4px rgba(255, 255, 255, 0.47);
+  font-family: "Just Another Hand";
+  font-size: 50px;
+  font-weight: 400;
+  width: 300px;
+  margin: 6px 0 8px;
 }
 
 .hero-text p {
-    width: auto;
-    height: auto;
-    margin: 0 0 30px;
-    color: #000;
-    font-family: "Noto Sans KR";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 142.857% */
-    word-break: keep-all;
+  margin: 0 0 30px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  word-break: keep-all;
 }
 
-
 .btn {
-    display: flex;
-    width: 133.173px;
-    height: 51px;
-    padding: 14px 26px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    background: #353439;
-    color: #fff;
+  display: flex;
+  width: 133.173px;
+  height: 51px;
+  padding: 14px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #353439;
+  color: #fff;
 }
 
 .hero-image {
-    width: 300.571px;
-    height: 303.897px;
-    flex-shrink: 0;
-    aspect-ratio: 300.57/303.90;
-    position:absolute; right:0px; left: 20px; top: 180px;   /* 텍스트와 겹치게 */
-    background: url("../images/icecream.png") no-repeat center/contain;
-    background-size:contain;
-    z-index:0; 
-    pointer-events:none;
+  width: 300.571px;
+  height: 303.897px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  top: 180px;
+  background: url("../images/icecream.png") no-repeat center/contain;
+  background-size: contain;
+  z-index: 0;
+  pointer-events: none;
 }
 
+/* Swiper */
 .swiper-slide {
-    width: 204px;
-    height: 278.133px;
-    flex-shrink: 0;
+  width: auto;
+  height: 278.133px;
+  flex-shrink: 0;
 }
 
-.menu-container ul { 
-    display: flex; 
-    gap: 20px; 
-}
-  
-.menu-container { 
-    position: static; 
-    background: transparent; 
+.menu-container ul {
+  display: flex;
+  gap: 20px;
 }
 
+.menu-container {
+  position: static;
+  background: transparent;
+}
+
+/* Commitment */
 #commitment {
-    margin: 8.888%;
+  margin: 8.888%;
+  position: relative;
+  z-index: 1;
+  padding: 56px 24px 72px;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
+#commitment .commit-first {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+#commitment .commit-first p {
+  color: #9C8F8F;
+  font-size: 12px;
+  letter-spacing: .04em;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+#commitment .commit-first h2 {
+  font-family: "Just Another Hand";
+  font-size: 50px;
+  color: #000;
+  outline: none;
+}
+
+#commitment .commit-first h2:focus {
+  outline: none;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* 슬라이드 카드 */
+#commitment .commit-wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 40px 50px;
+  overflow: hidden;
+}
+
+#commitment .swiper {
+  overflow: hidden;
+}
+
+#commitment .swiper-wrapper {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+
+#commitment .swiper-slide {
+  flex: 0 0 100% !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+}
+
+#commitment .swiper-slide p {
+  font-size: 13px;
+}
+
+/* 아이콘 */
+#commitment .icon {
+  width: 84px;
+  height: 84px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: grayscale(100%) brightness(0) opacity(.9);
+}
+
+#commitment .icon.sustainability {
+  background-image: url("images/icons/sustainability.svg");
+}
+
+#commitment .icon.zero-waste {
+  background-image: url("images/icons/zero-waste.svg");
+}
+
+#commitment .icon.diversity {
+  background-image: url("images/icons/diversity.svg");
+}
+
+#commitment .icon.community {
+  background-image: url("images/icons/community.svg");
+}
+
+/* 제목/설명 */
+#commitment h3 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #222;
+}
+
+#commitment .swiper-slide p {
+  font-size: 13px;
+  color: #6F6A6A;
+  line-height: 1.5;
+}
+
+/* 화살표 */
+#commitment .swiper-button-prev,
+#commitment .swiper-button-next {
+  width: 38px;
+  height: 38px;
+  top: calc(50% + 6px);
+  color: #6B4F4F;
+}
+
+#commitment .swiper-button-prev::after,
+#commitment .swiper-button-next::after {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#commitment .swiper-button-prev {
+  left: 8px;
+}
+
+#commitment .swiper-button-next {
+  right: 8px;
+}
+
+/* 페이지네이션 점 */
+#commitment .swiper-pagination {
+  bottom: 22px !important;
+  position: relative;
+  margin-top: 24px;
+}
+
+#commitment .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background: #8E7A7A;
+  opacity: .35;
+  margin: 0 3px !important;
+}
+
+#commitment .swiper-pagination-bullet-active {
+  background: #6B4F4F;
+  opacity: 1;
+}
+
+/* 섹션 CTA 버튼 */
+#commitment > .btn {
+  display: inline-flex;
+  margin: 18px auto 0;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: #353439;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Commit Wrapper */
+.commit-wrapper {
+  overflow: hidden;
+}
+
+.commit-wrapper .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+
+.commit-wrapper .swiper-slide {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #333;
+}
+
+.swiper-pagination-bullet {
+  background: #333;
+}
+
+/* Other Sections */
 #picks {
-    margin: 8.888%;
+  margin: 8.888%;
+}
+
+#picks .swiper-slide {
+  width: 204px;
 }
 
 #about {
-    margin: 8.888%;
+  margin: 8.888%;
 }
 
 #info-sections {
-    margin: 8.888%;
+  margin: 8.888%;
 }
 
 #instagram {
-    margin: 8.888%;
+  margin: 8.888%;
 }
 
 #contact {
-    margin: 8.888%;
+  margin: 8.888%;
+}
+
+/* 공통 버튼 정렬 */
+section:not(#hero):not(#about) .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  text-align: center;
 }
