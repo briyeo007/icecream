@@ -172,7 +172,7 @@ header .menu-container.active {
     height: 303.897px;
     flex-shrink: 0;
     aspect-ratio: 300.57/303.90;
-    position:absolute; right:130px; top: 220px;   /* 텍스트와 겹치게 */
+    position:absolute; right:0px; left: 35px; top: 220px;   /* 텍스트와 겹치게 */
     background: url("../images/icecream.png") no-repeat center/contain;
     background-size:contain;
     z-index:0; 
