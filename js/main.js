@@ -32,3 +32,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+ new Swiper('.picks-swiper', {
+  slidesPerView: 1,
+  centeredSlides: true,
+  loop: true,
+  spaceBetween: 0,
+  pagination: {
+    el: '#picks .swiper-pagination',   // ✅ 꼭 있어야 함
+    clickable: true
+  },
+  navigation: {
+    nextEl: '#picks .swiper-button-next',
+    prevEl: '#picks .swiper-button-prev'
+  }
+});
