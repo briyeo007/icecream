@@ -544,8 +544,66 @@ flex-shrink: 0;
 /* Other Sections */
 
 #about {
-  margin: 8.888%;
+  position: relative;
+  width: 100%;
+  height: 584px; /* 피그마 기준 높이 */
+  background: url("../images/about.png") center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 8.888%;
+  overflow: hidden;
 }
+
+/* 어둡게 오버레이 */
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+/* 텍스트 내용 */
+#about .about-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 400px;
+}
+
+#about p {
+  color: #FFF;
+  font-family: "Noto Sans KR";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 142.857% */
+}
+
+#about strong {
+  color: #FFF;
+font-family: "Noto Sans KR";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
+ display: block;
+  margin-bottom: 10px; 
+}
+
+#about h2 {
+  color: #FFF;
+  font-family: "Just Another Hand";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#about .about-inner .btn {
+  margin-top: 20px; /* 텍스트와 버튼 사이 간격 */
+}
+
 
 #info-sections {
   margin: 8.888%;
