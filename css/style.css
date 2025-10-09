@@ -321,30 +321,41 @@ header .menu-container.active {
   opacity: 0.9; /* 글자 대비를 살짝 줄여서 자연스럽게 */
 }
 
-
-/* 화살표 */
-#commitment .swiper-button-prev,
-#commitment .swiper-button-next {
- width: 30px;
-height: 50px;
-  top: calc(50% - 10px);
-  color: #6B4F4F;
+#commitment .commit-wrapper {
+  position: relative;
+  overflow: visible !important; /* ✅ 버튼이 안 잘리게 */
 }
 
+#commitment .swiper-button-prev,
+#commitment .swiper-button-next {
+  width: 30px;
+  height: 50px;
+  top: 50%; /* 중앙 기준 */
+  transform: translateY(-50%);
+  color: #6B4F4F;
+  position: absolute;
+  z-index: 10;
+}
+
+/* 화살표 간격 넓히기 */
+#commitment .swiper-button-prev {
+  left: -36px; /* 왼쪽으로 벌리기 */
+}
+#commitment .swiper-button-next {
+  right: -36px; /* 오른쪽으로 벌리기 */
+}
+
+/* 아이콘 크기 */
 #commitment .swiper-button-prev::after,
 #commitment .swiper-button-next::after {
-  width: 30px;
-height: 50px;
-flex-shrink: 0;
-  aspect-ratio: 20/33;
-  margin: 8.88%;
   font-size: 40px;
+  line-height: 1;
 }
 
 
 /* 페이지네이션 점 */
 #commitment .swiper-pagination {
-  bottom: 22px !important;
+  bottom: 12px !important;
   position: relative;
   margin-top: 5px;
 }
@@ -455,17 +466,28 @@ flex-shrink: 0;
 #picks .swiper-slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* ✅ 가로 중앙정렬 */
   justify-content: flex-start;
   text-align: center;
   gap: 14px;
   padding: 20px 0;
+  position: relative;
+}
+
+#picks .thumb {
+  display: flex;
+  justify-content: center; /* ✅ 수평 중앙 */
+  align-items: center;     /* ✅ 수직 중앙 */
+  width: 178px;
+  height: 197px;
+  margin: 0 auto;          /* ✅ 여분 정렬 */
 }
 
 #picks .thumb img {
-   width: 178px;        /* 기존 */
-  height: 197px;       /* ✅ 피그마 비율 맞게 강제 */
-  object-fit: cover
+  display: block;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* 제목/본문 */
@@ -502,11 +524,11 @@ height: 50px;
 }
 
 #picks .swiper-button-prev {
-  left: 22px;
+  left: 15px;
 }
 
 #picks .swiper-button-next {
-  right: 32px;
+  right: 15px;
 }
 
 #picks .swiper-button-prev::after,
@@ -816,11 +838,11 @@ line-height: 22px; /* 137.5% */
 
 /* 좌우 위치 */
 #instagram .swiper-button-prev {
-  left: calc(50% - 160px);
+  left: calc(50% - 170px);
 }
 
 #instagram .swiper-button-next {
-  right: calc(50% - 160px);
+  right: calc(50% - 170px);
 }
 
 /* 아이콘 크기 */
