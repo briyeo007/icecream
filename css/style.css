@@ -339,10 +339,10 @@ header .menu-container.active {
 
 /* 화살표 간격 넓히기 */
 #commitment .swiper-button-prev {
-  left: -36px; /* 왼쪽으로 벌리기 */
+  left: -16px; /* 왼쪽으로 벌리기 */
 }
 #commitment .swiper-button-next {
-  right: -36px; /* 오른쪽으로 벌리기 */
+  right: -16px; /* 오른쪽으로 벌리기 */
 }
 
 /* 아이콘 크기 */
