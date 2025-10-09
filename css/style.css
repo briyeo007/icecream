@@ -609,6 +609,137 @@ line-height: 22px; /* 137.5% */
   margin: 8.888%;
 }
 
+  #our-promise,
+  #community,
+  #events {
+     position: relative;
+    height: auto !important;
+    overflow: visible;
+    margin: 40px 0 72px; /* 섹션 간 간격 */
+  }
+
+
+
+  #our-promise::before,
+  #community::before,
+  #events::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+  left: 0;
+  right: 0;
+  top: 20px;      /* 위쪽 여백 */
+  bottom: 20px;   /* 아래쪽 여백 */
+  background: transparent; /* 필요 시 색 넣기 */
+  }
+
+
+    #our-promise .promise-text,
+  #community   .promise-community,
+  #events      .promise-event {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 1;
+  }
+
+
+  .promise-text,
+  .promise-community,
+  .promise-event {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000;
+    z-index: 2;
+    width: 90%;
+  }
+
+  .bg_our-promise {
+    background-image: url("../images/commitment.png");
+    width: 296px;
+    height: 232.374px;
+    flex-shrink: 0;
+  }
+
+  .bg_community {
+    background-image: url("../images/community.png");
+    width: 296px;
+    height: 232.374px;
+    flex-shrink: 0;
+  }
+
+  .bg_events {
+    background-image: url("../images/events.png");
+    width: 296px;
+    height: 232.374px;
+    flex-shrink: 0;
+  }
+
+  .bg_our-promise,
+  .bg_community,
+  .bg_events {
+   position: relative !important;
+    display: block !important;
+    width: 100% !important;
+    height: 240px !important; /* 필요시 조정 */
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    margin: 0 0 20px; /* 이미지와 텍스트 사이 간격 */
+    z-index: 0;
+  }
+
+  .promise-text span {
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+    .promise-text h3,
+  .promise-community h3,
+  .promise-event h3 {
+    color: #000;
+    text-align: center;
+    font-family: "Just Another Hand";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .promise-text strong {
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .promise-text p,
+  .promise-community p,
+  .promise-event p {
+    color: #000;
+    text-align: center;
+    font-family: "Noto Sans KR";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 142.857% */
+  }
+  
 #instagram {
   margin: 8.888%;
 }
