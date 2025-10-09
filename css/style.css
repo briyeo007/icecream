@@ -544,14 +544,14 @@ flex-shrink: 0;
 /* Other Sections */
 
 #about {
-  position: relative;
+   position: relative;
   width: 100%;
-  height: 584px; /* 피그마 기준 높이 */
+  height: 584px;
   background: url("../images/about.png") center center / cover no-repeat;
   display: flex;
   align-items: center;
   color: #fff;
-  padding: 8.888%;
+  padding: 80px 12%; /* ✅ 좌우 패딩 늘리기 (기존 8.888% → 12%) */
   overflow: hidden;
 }
 
@@ -568,7 +568,7 @@ flex-shrink: 0;
 #about .about-inner {
   position: relative;
   z-index: 1;
-  max-width: 400px;
+  max-width: 520px; /* ✅ 텍스트 영역 확장 */
 }
 
 #about p {
@@ -602,8 +602,8 @@ line-height: 22px; /* 137.5% */
 
 #about .about-inner .btn {
   margin-top: 20px; /* 텍스트와 버튼 사이 간격 */
+  
 }
-
 
 #info-sections {
   margin: 8.888%;
@@ -615,7 +615,7 @@ line-height: 22px; /* 137.5% */
      position: relative;
     height: auto !important;
     overflow: visible;
-    margin: 40px 0 72px; /* 섹션 간 간격 */
+    margin: 120px 0 72px; /* 섹션 간 간격 */
   }
 
 
@@ -738,11 +738,108 @@ line-height: 22px; /* 137.5% */
     font-style: normal;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
+    width: 284px;
+    margin: 0 auto;
+    line-height: 20px;
+    word-break: keep-all;
+    letter-spacing: 0.01em;
   }
+
+  #our-promise .promise-text strong { 
+    display:block; 
+    margin-bottom: 20px; 
+  }
+  #our-promise .promise-text strong + p {
+     margin-top: 12px; 
+    }
   
 #instagram {
   margin: 8.888%;
+  padding:40px 20px 32px;
+  text-align:center;
 }
+
+#instagram h2{
+  color: #000;
+  text-align: center;
+  font-family: "Just Another Hand";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 28px;
+}
+#instagram {
+  position: relative;
+}
+
+#instagram .instagram-swiper {
+  max-width: 320px;
+  margin: 0 auto 40px; /* 아래 여백 살짝 추가 */
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+#instagram .swiper-slide {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+}
+
+#instagram .thumb {
+  width: 284px;
+  height: 284px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#instagram .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ 화살표를 이미지 밑쪽 중앙에 배치 */
+#instagram .swiper-button-prev,
+#instagram .swiper-button-next {
+  position: absolute;
+  
+  transform: translateY(10%);
+  color: #6B4F4F;
+  width: 30px;
+  height: 50px;
+  z-index: 5;
+  opacity: 0.9;
+}
+
+/* 좌우 위치 */
+#instagram .swiper-button-prev {
+  left: calc(50% - 160px);
+}
+
+#instagram .swiper-button-next {
+  right: calc(50% - 160px);
+}
+
+/* 아이콘 크기 */
+#instagram .swiper-button-prev::after,
+#instagram .swiper-button-next::after {
+  font-size: 38px;
+  line-height: 1;
+}
+
+/* 하단 버튼 */
+#instagram .btn {
+  background: #353439;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  display: inline-flex;
+  margin-top: 6px;
+}
+
 
 #contact {
   margin: 8.888%;

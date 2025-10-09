@@ -47,3 +47,14 @@ document.addEventListener("DOMContentLoaded", () => {
     prevEl: '#picks .swiper-button-prev'
   }
 });
+
+new Swiper(".instagram-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  navigation: {
+    nextEl: "#instagram .swiper-button-next",
+    prevEl: "#instagram .swiper-button-prev",
+  },
+});
+
+
