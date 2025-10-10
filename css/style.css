@@ -906,7 +906,7 @@ line-height: 20px; /* 142.857% */
 }
 
 
-button,
+button:not(.menu-toggle),
 .btn,
 .contact-us button {
   display: inline-flex;
@@ -925,6 +925,7 @@ button,
   line-height: 1;
   transition: background 0.2s ease;
 }
+
 
 /* hover 효과 */
 button:hover,
