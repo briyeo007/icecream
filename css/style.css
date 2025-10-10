@@ -942,7 +942,7 @@ section:not(#hero):not(#about) button {
 }
 
 footer {
-  background: #3B2B2B; /* 피그마 배경 와인색 */
+  background: #32373C; /* 피그마 배경 와인색 */
   text-align: center;
   padding: 60px 20px;
   color: #FFFEFE;
