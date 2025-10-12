@@ -1281,22 +1281,29 @@ footer .social a[href*="tiktok"] {
   }
 
   #community .promise-community span,
-#community .promise-community h3,
-#community .promise-community p,
-#community .promise-community strong {
-  text-align: left;
-  align-self: flex-start;  /* 각 요소를 왼쪽으로 고정 */
-}
+  #community .promise-community h3,
+  #community .promise-community p,
+  #community .promise-community strong {
+    text-align: left;
+    align-self: flex-start;  /* 각 요소를 왼쪽으로 고정 */
+  }
 
   /* 타이틀/카피/버튼 간 간격 */
-  .promise-text span{font-size:16px; line-height:22px; margin-bottom:6px;}
+  .promise-text span {
+    font-size:16px; 
+    line-height:22px; 
+    margin-bottom:6px;
+  }
   .promise-text h3,
   .promise-community h3,
   .promise-event h3{
     font-family:"Just Another Hand";
     font-size:56px; line-height:1; margin:6px 0 10px;
   }
-  #our-promise .promise-text strong{display:block; margin:12px 0 8px;}
+  #our-promise .promise-text strong {
+    display:block; 
+    margin:12px 0 8px;
+  }
 
   .promise-text p,
   .promise-community p,
@@ -1309,12 +1316,108 @@ footer .social a[href*="tiktok"] {
   /* 버튼: 가운데 정렬 + 위 여백 통일 */
   #our-promise .btn,
   #community .btn,
-  #events .btn{margin:16px auto 0; height:46px; padding:0 26px;}
+  #events .btn{
+    margin:16px auto 0; 
+    height:46px; 
+    padding:0 26px;
+  }
 
   /* Picks 스와이퍼: 화살표/점 여백 살짝 조정(스샷 간격) */
-  #picks .swiper-button-prev{left:8px;}
-  #picks .swiper-button-next{right:8px;}
-  #picks .swiper-pagination{bottom:18px !important; margin-top:8px;}
+  #picks .swiper-button-prev {
+    left:8px;
+  }
 
-  
+  #picks .swiper-button-next {
+    right:8px;
+  }
+
+  #picks .swiper-pagination {
+    bottom:18px !important;
+    margin-top:8px;
+  }
+
+  /* Instagram = Picks와 동일 레이아웃 (768에서 2장) */
+  #instagram {
+    text-align:center;
+  }
+
+  #instagram .instagram-swiper {
+    max-width:592px; 
+    margin:0 auto 24px;
+    overflow: hidden; 
+  }
+
+  #instagram .instagram-swiper .swiper-slide{ 
+    width:284px !important; 
+    flex:0 0 284px !important; 
+  }
+
+  #instagram .swiper-slide{ /* 한 장 크기 고정 */
+    flex: 0 0 284px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  #instagram .thumb {
+    width: 284px;
+    height: 284px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  #instagram .thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  #instagram .swiper-slide, #instagram .thumb {
+    height:284px !important;
+  }
+
+  #instagram .swiper-wrapper {
+    display: flex !important;
+  }
+
+  #instagram .swiper {
+    overflow: visible !important;
+  }
+
+/* 화살표 위치: 세로 중앙, 좌우 살짝 바깥 */
+  #instagram .swiper-button-prev,
+  #instagram .swiper-button-next{ 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6B4F4F;
+    width: 30px;
+    height: 50px;
+    z-index: 5;
+    opacity: 0.9; 
+  }
+
+  #instagram .swiper-button-prev { 
+    left:-16px;
+  }
+
+  #instagram .swiper-button-next {
+    right:-16px;
+  }
+
+  #instagram .swiper-button-prev::after,
+  #instagram .swiper-button-next::after {
+    font-size:38px;
+    line-height:1;
+  }
+
+  #instagram .btn {
+    background: #353439;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 6px;
+    display: inline-flex;
+    margin-top: 6px;
+  }
+
 }
