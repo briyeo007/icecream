@@ -1,5 +1,6 @@
+// main.js (모바일 + 768만)
 document.addEventListener("DOMContentLoaded", () => {
-  // 햄버거 메뉴
+  // 햄버거
   const btn  = document.querySelector("button.menu-toggle");
   const menu = document.querySelector("header .menu-container");
   if (btn && menu) {
@@ -10,51 +11,34 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ✅ Commitment 스와이퍼 (모바일/데스크탑 모두 안정화)
-  let commitSwiper = new Swiper('.commit-wrapper', {
+  // ✅ Commitment (768에서 2장, 간격 24, 중앙정렬 해제)
+new Swiper("#commitment .swiper", {
+  slidesPerView: 1, centeredSlides: true, loop: false, spaceBetween: 16,
+  pagination:{ el:"#commitment .swiper-pagination", clickable:true },
+  navigation:{ nextEl:"#commitment .swiper-button-next", prevEl:"#commitment .swiper-button-prev" },
+  breakpoints:{ 768:{ slidesPerView:2, centeredSlides:false, spaceBetween:24 } }
+});
+
+  // Our Picks (모바일 1, 768에서 2)
+  new Swiper("#picks .picks-swiper", {
     slidesPerView: 1,
     centeredSlides: true,
     loop: false,
-    spaceBetween: 0,
-    pagination: { 
-      el: '#commitment .swiper-pagination', 
-      clickable: true 
-    },
-    navigation: { 
-      nextEl: '#commitment .swiper-button-next', 
-      prevEl: '#commitment .swiper-button-prev' 
-    },
+    spaceBetween: 16,
+    pagination: { el: "#picks .swiper-pagination", clickable: true },
+    navigation: { nextEl: "#picks .swiper-button-next", prevEl: "#picks .swiper-button-prev" },
     breakpoints: {
-      769: { // 데스크탑 이상
-        slidesPerView: 1,   // 한 장 유지
-        allowTouchMove: false // 드래그 막기
-      }
-    }
+      768: { slidesPerView: 2, centeredSlides: false, spaceBetween: 32 }
+    },
+    observer: true, observeParents: true
+  });
+
+  // Instagram (모바일 1, 768에서 2)
+  new Swiper(".instagram-swiper", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 16,
+    navigation: { nextEl: "#instagram .swiper-button-next", prevEl: "#instagram .swiper-button-prev" },
+    breakpoints: { 768: { slidesPerView: 2, spaceBetween: 24 } }
   });
 });
-
- new Swiper('.picks-swiper', {
-  slidesPerView: 1,
-  centeredSlides: true,
-  loop: true,
-  spaceBetween: 0,
-  pagination: {
-    el: '#picks .swiper-pagination',   // ✅ 꼭 있어야 함
-    clickable: true
-  },
-  navigation: {
-    nextEl: '#picks .swiper-button-next',
-    prevEl: '#picks .swiper-button-prev'
-  }
-});
-
-new Swiper(".instagram-swiper", {
-  slidesPerView: 1,
-  loop: true,
-  navigation: {
-    nextEl: "#instagram .swiper-button-next",
-    prevEl: "#instagram .swiper-button-prev",
-  },
-});
-
-
