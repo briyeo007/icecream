@@ -1030,7 +1030,7 @@ footer .social a[href*="tiktok"] {
   
   /* Hero: 12컬럼 그리드, 텍스트 좌/아이스크림 우(그림 겹침) */
   #hero{
-    padding:48px 24px 0;
+    padding:200px 24px 0;
     position:relative;
   }
 
@@ -1056,6 +1056,8 @@ footer .social a[href*="tiktok"] {
   .hero-text p{
     font-size:15px; 
     margin-bottom:28px;
+    white-space: normal;
+    width: 352.962px;
   }
 
   .btn {
@@ -1070,7 +1072,7 @@ footer .social a[href*="tiktok"] {
     align-self:start;
     width:441.787px; height:456.513px;
     position:relative; /* 그리드 안에서 고정 */
-    right:0; top:0;
+    right:0; top:-100px;
     background-size:contain;
     z-index:1; pointer-events:none;
     transform: translateY(-12px); /* 스샷처럼 살짝 위로 */
