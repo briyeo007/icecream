@@ -1420,4 +1420,21 @@ footer .social a[href*="tiktok"] {
     margin-top: 6px;
   }
 
+  .contact-us input {
+    width: 458px;
+    height: 65px;
+    flex-shrink: 0;
+    background: #F2F2F2;
+    color: #353439;
+    font-family: "Noto Sans KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 142.857% */
+}
+
+.contact-us button {
+  height: 65px;
+}
+
 }
