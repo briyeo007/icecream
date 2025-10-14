@@ -105,9 +105,14 @@ header .menu-container.active {
   display: block;
 }
 
+main {
+  margin-top: 100px;
+}
+
 /* Hero */
 #hero {
   position: relative;
+  background-color: #F6F6F6;
 }
 
 #hero .inner {
@@ -136,7 +141,7 @@ header .menu-container.active {
   font-family: "Just Another Hand";
   font-size: 50px;
   font-weight: 400;
-  
+  width: 295px;
 }
 
 .hero-text p {
@@ -144,16 +149,7 @@ header .menu-container.active {
   color: #000;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.5;
-}
-
-.btn {
-  width: 133px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background: #32373C;
-  color: #fff;
+  line-height: 1.43;
 }
 
 .hero-image {
@@ -167,6 +163,10 @@ header .menu-container.active {
   background-size: contain;
   z-index: 0;
   pointer-events: none;
+}
+
+#hero .btn {
+  margin-top: 20px;
 }
 
 /* Swiper */
@@ -193,6 +193,7 @@ header .menu-container.active {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
+  margin-top: 120px;
 }
 
 #commitment .commit-first {
@@ -201,13 +202,10 @@ header .menu-container.active {
 }
 
 #commitment .commit-first p {
-  color: #000;
-  font-size: 14px;
-  letter-spacing: .04em;
-  margin-bottom: 1px;
-  font-weight: 400;
-  line-height: 20px;
-  
+  color: #555;
+text-align: center;
+font-size: 14px;
+font-style: normal;
 }
 
 #commitment .commit-first h2 {
@@ -217,14 +215,7 @@ header .menu-container.active {
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  margin-top: 0;
-}
-
-#commitment .commit-first h2:focus {
-  outline: none;
-  text-align: center;
-  margin-bottom: 50px;
+  margin-top: -4px;
 }
 
 /* 슬라이드 카드 */
@@ -265,11 +256,12 @@ header .menu-container.active {
 
 /* 아이콘 */
 #commitment .icon {
-  width: 84px;
-  height: 84px;
+  width: 100px;
+  height: 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  
 }
 
 #commitment .icon.sustainability {
@@ -311,11 +303,6 @@ header .menu-container.active {
   max-width: 200px;
   margin: 0 auto;
   opacity: 0.9; /* 글자 대비를 살짝 줄여서 자연스럽게 */
-}
-
-#commitment .commit-wrapper {
-  position: relative;
-  overflow: visible; /* ✅ 버튼이 안 잘리게 */
 }
 
 #commitment .swiper-button-prev,
@@ -365,16 +352,7 @@ header .menu-container.active {
   opacity: 1;
 }
 
-/* 섹션 CTA 버튼 */
-#commitment > .btn {
-  display: inline-flex;
-  margin: 18px auto 0;
-  padding: 10px 18px;
-  border-radius: 6px;
-  background: #353439;
-  color: #fff;
-  font-size: 14px;
-}
+
 
 /* Commit Wrapper */
 .commit-wrapper {
@@ -396,26 +374,59 @@ header .menu-container.active {
   width: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: #333;
+
+/* 화살표 */
+#commitment .swiper-button-prev,
+#commitment .swiper-button-next {
+ width: 30px;
+height: 50px;
+  top: calc(50% - 10px);
+  color: #6B4F4F;
 }
 
-.swiper-button-prev {
+#commitment .swiper-button-prev {
   left: 15px;
 }
 
-.swiper-button-next {
+#commitment .swiper-button-next {
   right: 15px;
 }
 
-.swiper-pagination-bullet {
-  background: #333;
+#commitment .swiper-button-prev::after,
+#commitment .swiper-button-next::after {
+   width: 30px;
+height: 50px;
+flex-shrink: 0;
+  aspect-ratio: 20/33;
+  margin: 8.88%;
+  font-size: 40px;
+  line-height: 1;
+  }
+  
+/* 페이지네이션 점 */
+#commitment .swiper-pagination {
+  bottom: 22px;
+  position: relative;
+  margin-top: 5px;
+}
+
+#commitment .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: #8E7A7A;
+  opacity: .35;
+  margin: 0 px;
+}
+
+#commitment .swiper-pagination-bullet-active {
+  background: #6B4F4F;
+  opacity: 1;
 }
 
 /* Picks Section */
 #picks {
-  width: 82.222%;
+  width: 100%;
+  background: #F2F2F2;
   margin: 0 auto;
   position: relative;
   z-index: 1;
@@ -424,10 +435,19 @@ header .menu-container.active {
   overflow: hidden;
 }
 
+#picks .our-picks {
+  width: 82.222%;
+  margin: 0 auto;
+}
+
 /* 상단 타이틀 영역 */
 #picks .picks {
   text-align: center;
   margin-bottom: 18px;
+}
+
+#picks a {
+  background: #ffffff;
 }
 
 #picks .picks p {
@@ -618,10 +638,7 @@ line-height: 22px; /* 137.5% */
   line-height: normal;
 }
 
-#about .about-inner .btn {
-  margin-top: 20px; /* 텍스트와 버튼 사이 간격 */
-  
-}
+
 
 #info-sections {
   margin: 8.888%;
@@ -850,9 +867,8 @@ line-height: 22px; /* 137.5% */
   background: #353439;
   color: #fff;
   padding: 14px 28px;
-  border-radius: 6px;
   display: inline-flex;
-  margin-top: 6px;
+  margin-top: -10px;
 }
 
 
@@ -900,8 +916,9 @@ button:not(.menu-toggle),
 .btn {
   background: #353439;
   color: #fff;
-  padding: 14px 28px;
-  margin-top: 6px;
+  padding: 14px 28px; 
+  margin-top: 20px; /* ✅ 버튼 아래로 내림 */
+  display: inline-block; /* ✅ 마진이 확실히 먹게 */
 }
 
 .contact-us button {
@@ -923,13 +940,6 @@ button:hover,
 .btn:hover,
 .contact-us button:hover {
   background: #5A3F3F;
-}
-
-/* ✅ 섹션 내 공통 정렬 */
-section:not(#hero):not(#about) .btn,
-section:not(#hero):not(#about) button {
-  margin: 20px auto 0;
-  text-align: center;
 }
 
 footer {
