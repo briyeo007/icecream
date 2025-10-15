@@ -121,6 +121,7 @@ main {
   width: 82.222%;
   margin: 0 auto;
   padding-top: 83px;
+  height: 744px;
 }
 
 .hero-text {
@@ -159,7 +160,7 @@ main {
   height: 303px;
   position: absolute;
   right: 0;
-  bottom: 90px;
+  bottom: 28.2%;
    left: 50%;
   transform: translateX(-50%);
   background: url("../images/icecream.png") no-repeat center/contain;
@@ -219,14 +220,14 @@ font-style: normal;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  margin-top: -4px;
+  margin-top: 4px;
 }
 
 /* 슬라이드 카드 */
 #commitment .commit-wrapper {
   width: auto;
   margin: 0 auto;
-  padding: 0 0 50px;
+  padding: 0 0 90px;
   overflow: hidden;
   position: relative;
 }
@@ -243,12 +244,10 @@ font-style: normal;
   justify-content: flex-start;
   text-align: center;
   gap: 14px; /* 아이콘, 제목, 설명 간 간격 */
-  padding: 20px 0; 
+  padding: 40px 0; 
 }
 
-#commitment .swiper-slide p {
-  font-size: 13px;
-}
+
 
 /* 아이콘 */
 #commitment .icon {
@@ -301,25 +300,6 @@ font-style: normal;
   opacity: 0.9; /* 글자 대비를 살짝 줄여서 자연스럽게 */
 }
 
-#commitment .swiper-button-prev,
-#commitment .swiper-button-next {
-  width: 82.222%;
-  height: 50px;
-  top: 50%; /* 중앙 기준 */
-  transform: translateY(-50%);
-  color: #6B4F4F;
-  position: absolute;
-  z-index: 10;
-  margin: 0 auto;
-}
-
-/* 화살표 간격 넓히기 */
-#commitment .swiper-button-prev {
-  left: -16px; /* 왼쪽으로 벌리기 */
-}
-#commitment .swiper-button-next {
-  right: -16px; /* 오른쪽으로 벌리기 */
-}
 
 /* 아이콘 크기 */
 #commitment .swiper-button-prev::after,
@@ -410,11 +390,13 @@ flex-shrink: 0;
   z-index: 1;
   padding: 56px 24px 72px;
   overflow: hidden;
+  height: 658px;
 }
 
-#picks .our-picks {
+#picks .our-pick {
   width: 82.222%;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 /* 상단 타이틀 영역 */
@@ -441,11 +423,9 @@ flex-shrink: 0;
   text-align: center;
   font-family: "Just Another Hand";
   font-size: 50px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  margin-top: 0;
 }
+
 #picks .swiper {
   overflow: hidden;
 }
@@ -585,7 +565,7 @@ flex-shrink: 0;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 1.5; /* 142.857% */
 }
 
 #about strong {
@@ -593,9 +573,9 @@ flex-shrink: 0;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 22px; /* 137.5% */
+line-height: 1.4; /* 137.5% */
  display: block;
-
+margin-bottom: 20px;
 }
 
 #about h2 {
@@ -604,7 +584,7 @@ line-height: 22px; /* 137.5% */
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  margin-bottom: 10px;
 }
 
 
@@ -692,7 +672,6 @@ line-height: 22px; /* 137.5% */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
   }
 
   .promise-text p,
@@ -707,6 +686,16 @@ line-height: 22px; /* 137.5% */
     letter-spacing: 0.01em;
   }
 
+.promise-community p
+  {
+  margin-top: 20px;
+}
+
+.promise-event p {
+  margin-top: 10px;
+}
+
+
    .promise-community h3,
    .promise-event h3{
     color: #000;
@@ -714,6 +703,7 @@ line-height: 22px; /* 137.5% */
     font-family: "Just Another Hand";
     font-size: 50px;
     font-weight: 400;
+    line-height: normal;
   }
 
   #our-promise .promise-text strong { 
@@ -757,8 +747,8 @@ line-height: 22px; /* 137.5% */
 }
 
 #instagram .thumb {
-  width: 284px;
-  height: 284px;
+  width: 208px;
+  height: 208px;
   border-radius: 0;
   overflow: hidden;
 }
@@ -773,24 +763,12 @@ line-height: 22px; /* 137.5% */
 /* ✅ 화살표를 이미지 밑쪽 중앙에 배치 */
 #instagram .swiper-button-prev,
 #instagram .swiper-button-next {
-  position: absolute;
-  
-  transform: translateY(10%);
+width: 10px;
+height: 50px;
+  top: calc(50% - 10px);
   color: #6B4F4F;
-  width: 30px;
-  height: 50px;
-  z-index: 5;
-  opacity: 0.9;
 }
 
-/* 좌우 위치 */
-#instagram .swiper-button-prev {
-  left: calc(50% - 170px);
-}
-
-#instagram .swiper-button-next {
-  right: calc(50% - 170px);
-}
 
 /* 아이콘 크기 */
 #instagram .swiper-button-prev::after,
@@ -839,7 +817,6 @@ line-height: 50px; /* 100% */
 .contact-us input {
   width: 218px;
 height: 42px;
-flex-shrink: 0;
   background: #F2F2F2;
   color: #353439;
 font-size: 14px;
@@ -848,14 +825,20 @@ font-weight: 400;
 line-height: 20px; /* 142.857% */
 }
 
-
 button:not(.menu-toggle),
 .btn {
   background: #353439;
   color: #fff;
-  padding: 14px 28px; 
+  padding: 13px 24px; 
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
+  width: 132.455px;
+  height: 49.291px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .contact-us button {
@@ -869,6 +852,8 @@ button:not(.menu-toggle),
   line-height: 42px;
   text-align: center;
   position: absolute;
+  margin-top: 0px;
+  width: 100px;
 }
 
 
