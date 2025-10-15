@@ -26,13 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: "#commitment .swiper-button-next",
       prevEl: "#commitment .swiper-button-prev",
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        centeredSlides: false,
-        spaceBetween: 24,
-      },
-    },
   });
 
   // Our Picks (모바일 1, 768에서 2)
@@ -49,13 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: "#picks .swiper-button-next",
       prevEl: "#picks .swiper-button-prev",
     },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-        centeredSlides: false,
-        spaceBetween: 32,
-      },
-    },
     observer: true,
     observeParents: true,
   });
@@ -69,13 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     navigation: {
       nextEl: "#instagram .swiper-button-next",
       prevEl: "#instagram .swiper-button-prev",
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2, // ✅ 두 장 표시
-        centeredSlides: false, // ✅ 중앙 정렬 해제
-        spaceBetween: 24,
-      },
     },
   });
 });
