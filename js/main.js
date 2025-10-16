@@ -47,6 +47,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Instagram (모바일 1, 768에서 2)
+
+  
   new Swiper(".instagram-swiper", {
     slidesPerView: 1,
     loop: false,

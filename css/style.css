@@ -117,7 +117,6 @@ main {
 
 #hero .inner {
   position: relative;
-  padding-bottom: 340px;
   width: 82.222%;
   margin: 0 auto;
   padding-top: 83px;
@@ -196,9 +195,9 @@ main {
   width: 82.222%;
   margin: 0 auto;
   position: relative;
-  border-radius: 12px;
   overflow: hidden;
   margin-top: 120px;
+  background: white;
 }
 
 #commitment .commit-first {
@@ -385,12 +384,9 @@ flex-shrink: 0;
 #picks {
   width: 100%;
   background: #F2F2F2;
-  margin: 0 auto;
   position: relative;
-  z-index: 1;
   padding: 56px 24px 72px;
   overflow: hidden;
-  height: 658px;
 }
 
 #picks .our-pick {
@@ -407,6 +403,9 @@ flex-shrink: 0;
 
 #picks a {
   background: #ffffff;
+  display: block;
+  width: 70%;
+  height: 278px;
 }
 
 #picks .picks p {
@@ -470,23 +469,21 @@ flex-shrink: 0;
 /* 제목/본문 */
 #picks h3 {
   color: #000;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
-  letter-spacing: 0.02em;
-  margin: 4px 0 11px;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
 }
 
 #picks .swiper-slide p {
-  color: #000;
+ color: #000;
+  text-align: center;
   font-size: 14px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.01em;
-  max-width: 200px;
-  margin: 0 auto;
-  word-break: keep-all;
-  opacity: 0.9;
+  line-height: 20px; /* 142.857% */
+  margin-top: 10px;
 }
 
 /* 화살표 */
@@ -713,9 +710,12 @@ margin-bottom: 20px;
 
   
 #instagram {
-  margin: 8.888%;
+  width: 100%;
   padding:40px 20px 32px;
   text-align:center;
+  background: #F2F2F2;
+  position: relative;
+  overflow: hidden;
 }
 
 #instagram h2{
@@ -727,9 +727,6 @@ margin-bottom: 20px;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 28px;
-}
-#instagram {
-  position: relative;
 }
 
 #instagram .instagram-swiper {
@@ -779,18 +776,22 @@ height: 50px;
 
 /* 하단 버튼 */
 #instagram .btn {
-  background: #353439;
+ background: #353439;
   color: #fff;
-  padding: 14px 28px;
   display: inline-block;
-  margin-top: -10px;
+  margin-top: 0;
+  width: 132px;
+  height: 49px;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  line-height: 49px;
 }
 
 
 #contact {
-  margin: 8.888%;
   text-align: center;
-  padding: 60px 20px;
+  padding: 120px 20px;
   color: #3b2b2b;
 }
 
@@ -814,8 +815,18 @@ font-weight: 400;
 line-height: 50px; /* 100% */
 }
 
+.contact-us form {
+  width: 60%;
+  position: relative;
+  margin: 30px auto 0;
+}
+
+.contact-us label {
+  display: none;
+}
+
 .contact-us input {
-  width: 218px;
+  width: calc(100% - 78px);
 height: 42px;
   background: #F2F2F2;
   color: #353439;
@@ -829,16 +840,14 @@ button:not(.menu-toggle),
 .btn {
   background: #353439;
   color: #fff;
-  padding: 13px 24px; 
   display: inline-block;
   margin-top: 30px;
-  width: 132.455px;
-  height: 49.291px;
-  justify-content: center;
+  width: 132px;
+  height: 49px;
   align-items: center;
   font-size: 16px;
   text-align: center;
-  line-height: 1.2;
+  line-height: 49px;
 }
 
 .contact-us button {
@@ -849,11 +858,12 @@ button:not(.menu-toggle),
   height: 42px;             /* 모든 버튼 높이 동일 */
   padding: 0 24px;          /* 좌우 패딩 통일 */
   transition: background 0.2s ease;
-  line-height: 42px;
-  text-align: center;
+  line-height: 1;
   position: absolute;
   margin-top: 0px;
-  width: 100px;
+  width: 78px;
+  word-break: keep-all;
+  
 }
 
 
