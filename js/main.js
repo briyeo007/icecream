@@ -1,43 +1,65 @@
 // main.js (모바일 + 768만)
 document.addEventListener("DOMContentLoaded", () => {
-  // 햄버거
-  const btn = document.querySelector("button.menu-toggle");
+  const btn  = document.querySelector("button.menu-toggle");
   const menu = document.querySelector("header .menu-container");
+  const nav  = menu?.querySelector("nav");
 
-  if (btn && menu) {
+  if (btn && menu && nav) {
     btn.addEventListener("click", (e) => {
       e.preventDefault();
-      menu.classList.toggle("active");
-      btn.setAttribute("aria-expanded", menu.classList.contains("active"));
+      const isActive = menu.classList.toggle("active");
+      btn.setAttribute("aria-expanded", isActive);
+
+      if (isActive) {
+        // 👉 오른쪽에서 부드럽게 열림
+        nav.animate(
+          [{ transform: "translateX(100%)" }, { transform: "translateX(0)" }],
+          { duration: 400, easing: "cubic-bezier(0.25, 1, 0.5, 1)", fill: "forwards" }
+        );
+      } else {
+        // 👈 오른쪽으로 부드럽게 닫힘
+        nav.animate(
+          [{ transform: "translateX(0)" }, { transform: "translateX(100%)" }],
+          { duration: 400, easing: "cubic-bezier(0.25, 1, 0.5, 1)", fill: "forwards" }
+        );
+        document.body.style.overflow = "";
+      }
+    });
+
+    // ✅ 메뉴 안 링크 클릭 시 닫힘
+    nav.addEventListener("click", (e) => {
+      const link = e.target.closest("a");
+      if (link) {
+        menu.classList.remove("active");
+        btn.setAttribute("aria-expanded", "false");
+        nav.animate(
+          [{ transform: "translateX(0)" }, { transform: "translateX(100%)" }],
+          { duration: 400, easing: "cubic-bezier(0.25, 1, 0.5, 1)", fill: "forwards" }
+        );
+        document.body.style.overflow = "";
+      }
     });
   }
 
-  // ✅ Commitment (768에서 2장, 간격 24, 중앙정렬 해제)
+  // ✅ 아래는 스와이퍼 (기존 그대로)
   new Swiper("#commitment .swiper", {
     slidesPerView: 1,
     centeredSlides: true,
     loop: false,
     spaceBetween: 16,
-    pagination: {
-      el: "#commitment .swiper-pagination",
-      clickable: true,
-    },
+    pagination: { el: "#commitment .swiper-pagination", clickable: true },
     navigation: {
       nextEl: "#commitment .swiper-button-next",
       prevEl: "#commitment .swiper-button-prev",
     },
   });
 
-  // Our Picks (모바일 1, 768에서 2)
   new Swiper("#picks .picks-swiper", {
     slidesPerView: 1,
     centeredSlides: true,
     loop: false,
     spaceBetween: 16,
-    pagination: {
-      el: "#picks .swiper-pagination",
-      clickable: true,
-    },
+    pagination: { el: "#picks .swiper-pagination", clickable: true },
     navigation: {
       nextEl: "#picks .swiper-button-next",
       prevEl: "#picks .swiper-button-prev",
@@ -46,14 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
     observeParents: true,
   });
 
-  // Instagram (모바일 1, 768에서 2)
-
-  
   new Swiper(".instagram-swiper", {
     slidesPerView: 1,
     loop: false,
     spaceBetween: 16,
-    centeredSlides: false, // ✅ 항상 해제
+    centeredSlides: false,
     navigation: {
       nextEl: "#instagram .swiper-button-next",
       prevEl: "#instagram .swiper-button-prev",
