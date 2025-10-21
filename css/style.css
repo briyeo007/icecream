@@ -172,7 +172,7 @@ main {
   height: 303px;
   position: absolute;
   right: 0;
-  bottom: 28.2%;
+  bottom: 25.2%;
    left: 50%;
   transform: translateX(-50%);
   background: url("../images/icecream.png") no-repeat center/contain;
@@ -211,6 +211,7 @@ main {
   overflow: hidden;
   margin-top: 120px;
   background: white;
+  margin-bottom: 120px;
 }
 
 #commitment .commit-first {
@@ -239,7 +240,6 @@ font-style: normal;
 #commitment .commit-wrapper {
   width: auto;
   margin: 0 auto;
-  padding: 0 0 90px;
   overflow: hidden;
   position: relative;
 }
@@ -332,7 +332,7 @@ font-style: normal;
   width: 15px;
   height: 15px;
   background: #000;
-  opacity: .35;
+  opacity: .1;
   margin: 0 px;
 }
 
@@ -384,7 +384,7 @@ flex-shrink: 0;
   width: 15px;
   height: 15px;
   background: #000;
-  opacity: .35;
+  opacity: .1;
   margin: 0 px;
 }
 
@@ -398,14 +398,15 @@ flex-shrink: 0;
   width: 100%;
   background: #F2F2F2;
   position: relative;
-  padding: 56px 24px 72px;
   overflow: hidden;
 }
 
 #picks .our-pick {
   width: 82.222%;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 120px;
+  position: relative;
+  margin-bottom: 120px;
 }
 
 /* 상단 타이틀 영역 */
@@ -417,7 +418,7 @@ flex-shrink: 0;
 #picks a {
   background: #ffffff;
   display: block;
-  width: 70%;
+  width: 56.666%;
   height: 278px;
   padding: 30px;
 }
@@ -509,6 +510,14 @@ height: 50px;
   color: #6B4F4F;
 }
 
+#picks .swiper-button-prev {
+  left: 15px;
+}
+
+#picks .swiper-button-next {
+  right: 15px;
+}
+
 #picks .swiper-button-prev::after,
 #picks .swiper-button-next::after {
    width: 30px;
@@ -532,7 +541,7 @@ flex-shrink: 0;
   width: 15px;
   height: 15px;
   background: #000;
-  opacity: .35;
+  opacity: .1;
   margin: 0 px;
   
 }
@@ -731,12 +740,18 @@ margin-bottom: 20px;
   
 #instagram {
   width: 100%;
-  padding:40px 20px 32px;
   text-align:center;
   background: #F2F2F2;
   position: relative;
   overflow: hidden;
-  padding: 120px 0;
+}
+
+#instagram .inner {
+  width: 82.222%;
+  margin: 0 auto;
+  margin-top: 120px;
+  position: relative;
+  margin-bottom: 120px;
 }
 
 #instagram span {
@@ -790,11 +805,23 @@ height: 50px;
   color: #6B4F4F;
 }
 
+#commitment .swiper-button-prev {
+  left: 15px;
+}
+
+#commitment .swiper-button-next {
+  right: 15px;
+}
 
 /* 아이콘 크기 */
 #instagram .swiper-button-prev::after,
 #instagram .swiper-button-next::after {
-  font-size: 38px;
+ width: 30px;
+height: 50px;
+flex-shrink: 0;
+  aspect-ratio: 20/33;
+  margin: 8.88%;
+  font-size: 40px;
   line-height: 1;
 }
 
@@ -842,6 +869,8 @@ line-height: 50px; /* 100% */
   width: 60%;
   position: relative;
   margin: 30px auto 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .contact-us label {
@@ -849,7 +878,7 @@ line-height: 50px; /* 100% */
 }
 
 .contact-us input {
-  width: calc(100% - 78px);
+  width: calc(100% - 10px);
 height: 42px;
   background: #F2F2F2;
   color: #353439;
@@ -857,6 +886,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 142.857% */
+padding-left: 10px
 }
 
 button:not(.menu-toggle),
@@ -938,7 +968,7 @@ footer p span {
   display: block;
   color: #D9D9D9;
   font-size: 13px;
-
+  margin-top: 1px;
 }
 
 /* 아이콘 */
@@ -971,7 +1001,7 @@ footer .social a[href*="tiktok"] {
 }
 
 /* ============ 768px 헤더/히어로/커밋먼트 픽스 ============ */
-@media (min-width:768px) and (max-width:1023px){
+@media (min-width:768px){
 
   /* Header */
   .header h1 img {
@@ -1053,8 +1083,9 @@ footer .social a[href*="tiktok"] {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  margin-top: 120px;
+  margin-top: 150px;
   background: white;
+  margin-bottom:150px;
   }
   #commitment .commit-first {
     margin-bottom:24px;
@@ -1311,8 +1342,21 @@ footer .social a[href*="tiktok"] {
 
   /* Instagram = Picks와 동일 레이아웃 (768에서 2장) */
   #instagram {
+    width: 100%;
     text-align:center;
+    background: #F2F2F2;
+    position: relative;
+    overflow: hidden;
   }
+
+  #instagram .inner {
+  width: 82.222%;
+  margin: 0 auto;
+  margin-top: 120px;
+  position: relative;
+  margin-bottom: 120px;
+}
+
 
   #instagram .instagram-swiper {
     max-width:592px; 
@@ -1346,15 +1390,15 @@ footer .social a[href*="tiktok"] {
   }
 
   #instagram .swiper-slide, #instagram .thumb {
-    height:284px !important;
+    height:284px;
   }
 
   #instagram .swiper-wrapper {
-    display: flex !important;
+    display: flex;
   }
 
   #instagram .swiper {
-    overflow: visible !important;
+    overflow: visible;
   }
 
 /* ✅ 화살표를 이미지 밑쪽 중앙에 배치 */
@@ -1366,11 +1410,23 @@ height: 50px;
   color: #6B4F4F;
 }
 
+#commitment .swiper-button-prev {
+  left: 15px;
+}
+
+#commitment .swiper-button-next {
+  right: 15px;
+}
 
 /* 아이콘 크기 */
 #instagram .swiper-button-prev::after,
 #instagram .swiper-button-next::after {
-  font-size: 38px;
+ width: 30px;
+height: 50px;
+flex-shrink: 0;
+  aspect-ratio: 20/33;
+  margin: 8.88%;
+  font-size: 40px;
   line-height: 1;
 }
 

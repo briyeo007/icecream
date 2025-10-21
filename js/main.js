@@ -77,5 +77,11 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: "#instagram .swiper-button-next",
       prevEl: "#instagram .swiper-button-prev",
     },
-  });
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+  },
+});
 });
