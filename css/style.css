@@ -182,7 +182,7 @@ main {
 }
 
 #hero .btn {
-  margin-top: 20px;
+  margin-top: 30px;
   display: inline-block;
 }
 
@@ -216,7 +216,6 @@ main {
 
 #commitment .commit-first {
   text-align: center;
-  margin-bottom: 18px;
 }
 
 #commitment .commit-first p {
@@ -412,7 +411,6 @@ flex-shrink: 0;
 /* 상단 타이틀 영역 */
 #picks .picks {
   text-align: center;
-  margin-bottom: 18px;
 }
 
 #picks a {
@@ -461,7 +459,7 @@ flex-shrink: 0;
   justify-content: flex-start;
   text-align: center;
   gap: 14px;
-  padding: 20px 0;
+  padding: 27px 0;
   position: relative;
 }
 
@@ -489,6 +487,7 @@ font-size: 16px;
 font-style: normal;
 font-weight: 500;
 line-height: 22px; /* 137.5% */
+margin-top: 10px;
 }
 
 #picks .swiper-slide p {
@@ -766,11 +765,11 @@ margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 28px;
+  margin-bottom: 50px;
 }
 
 #instagram .instagram-swiper {
-  margin: 0 auto 40px; /* 아래 여백 살짝 추가 */
+  margin: 0 auto; /* 아래 여백 살짝 추가 */
   overflow: hidden;
   position: relative;
   z-index: 2;
@@ -830,7 +829,7 @@ flex-shrink: 0;
  background: #353439;
   color: #fff;
   display: inline-block;
-  margin-top: 0;
+  margin-top: 32px;
   width: 132px;
   height: 49px;
   align-items: center;
@@ -869,8 +868,8 @@ line-height: 50px; /* 100% */
   width: 60%;
   position: relative;
   margin: 30px auto 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 50px;
+  
 }
 
 .contact-us label {
@@ -896,7 +895,6 @@ button:not(.menu-toggle),
   display: inline-block;
   margin-top: 30px;
   width: 132px;
-  height: 49px;
   align-items: center;
   font-size: 16px;
   text-align: center;
@@ -915,7 +913,6 @@ button:not(.menu-toggle),
   margin-top: 0px;
   width: 78px;
   word-break: keep-all;
-  
 }
 
 
@@ -1502,7 +1499,6 @@ line-height: 20px; /* 142.857% */
   margin-top: 0px;
   width: 128px;
   word-break: keep-all;
-  
 }
 
 }
