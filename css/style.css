@@ -1,4 +1,4 @@
-/* 기본 리셋 */
+ /* 기본 리셋 */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -126,13 +126,13 @@ main {
 #hero {
   position: relative;
   background-color: #F6F6F6;
+  padding-top: 93px;
 }
 
 #hero .inner {
   position: relative;
   width: 82.222%;
   margin: 0 auto;
-  padding-top: 93px;
   height: 744px;
 }
 
@@ -172,7 +172,7 @@ main {
   height: 303px;
   position: absolute;
   right: 0;
-  bottom: 25.2%;
+  bottom: 35%;
    left: 50%;
   transform: translateX(-50%);
   background: url("../images/icecream.png") no-repeat center/contain;
@@ -1001,26 +1001,39 @@ footer .social a[href*="tiktok"] {
 
   /* Header */
   .header h1 img {
-  height: 60px;
+  height: 70px;
+  width: 131px;
 }
 
   .header h1{
     margin-left:24px;
   }
+
+  .menu-toggle span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  text-indent: -9999px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+
+}
   
   /* Hero: 12컬럼 그리드, 텍스트 좌/아이스크림 우(그림 겹침) */
-  #hero{
-    padding:130px 24px 0;
-    position:relative;
-  }
+ #hero {
+  position: relative;
+  background-color: #F6F6F6;
+  padding-top: 203px;
+  
+}
 
-  #hero .inner{
-    display:grid;
-    grid-template-columns:repeat(12,1fr);
-    column-gap:16px;
-    align-items:start;
-    padding-bottom:0;
-  }
+  #hero .inner {
+  position: relative;
+  width: 82.222%;
+  margin: 0 auto;
+  height: 744px; 
+}
 
   .hero-text {
   position: relative;
@@ -1039,35 +1052,33 @@ footer .social a[href*="tiktok"] {
   font-family: "Just Another Hand";
   font-size: 90px;
   font-weight: 400;
-  width: 797px;
+  width: 707px;
   margin-top: 25px;
 }
 
 .hero-text p {
-  width: 352px;
   margin: 0 0 0px;
   color: #000;
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.45;
 }
 
 #hero .btn {
   margin-top: 50px;
   display: inline-block;
-}
+}               
 
-  .btn {
-    height:46px; 
-    padding:0 26px;
-  }
+
 
   /* 아이스크림 이미지: 우측 상단, 스샷 위치 고정 */
   .hero-image {
     width:441px; 
     height:456px;
-    right:0; 
-    top: 0;
+    position: absolute;
+    right: 0; 
+    left: 40%;
+    bottom: 50%;
     background-size:contain;
     z-index:1; pointer-events:none;
     transform: translateY(-15px); /* 스샷처럼 살짝 위로 */
@@ -1083,21 +1094,31 @@ footer .social a[href*="tiktok"] {
   background: white;
   margin-bottom:150px;
   }
+
   #commitment .commit-first {
-    margin-bottom:24px;
+    text-align: center;
   }
+
+  #commitment .commit-first p {
+  color: #555;
+text-align: center;
+font-size: 18px;
+font-style: normal;
+}
+
   #commitment .commit-first h2 {
-    font-size:56px;
+    color: #000;
+  text-align: center;
+  font-family: "Just Another Hand";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 4px;
   }
 
   /* 스와이퍼를 정적 그리드로 전환 */
   #commitment .commit-wrapper {
-    max-width:720px;
-    margin:0 auto;
-  }
-
-  #commitment .swiper {
-    overflow:visible;
+    width: 573px;
   }
 
   #commitment .swiper-wrapper {
