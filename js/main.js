@@ -64,6 +64,13 @@ document.addEventListener("DOMContentLoaded", () => {
       nextEl: "#picks .swiper-button-next",
       prevEl: "#picks .swiper-button-prev",
     },
+
+ breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+  },
     observer: true,
     observeParents: true,
   });
