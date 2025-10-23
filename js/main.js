@@ -54,26 +54,27 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
-  new Swiper("#picks .picks-swiper", {
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: false,
-    spaceBetween: 16,
-    pagination: { el: "#picks .swiper-pagination", clickable: true },
-    navigation: {
-      nextEl: "#picks .swiper-button-next",
-      prevEl: "#picks .swiper-button-prev",
-    },
-
- breakpoints: {
+new Swiper("#picks .picks-swiper", {
+  slidesPerView: 1,
+  loop: false,
+  spaceBetween: 16,
+  centeredSlides: false,
+  navigation: {
+    nextEl: "#picks .swiper-button-next",
+    prevEl: "#picks .swiper-button-prev",
+  },
+  pagination: {
+    el: "#picks .swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
     768: {
       slidesPerView: 2,
       spaceBetween: 24,
     },
   },
-    observer: true,
-    observeParents: true,
-  });
+});
+
 
   new Swiper(".instagram-swiper", {
     slidesPerView: 1,

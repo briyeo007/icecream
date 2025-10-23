@@ -442,7 +442,7 @@ flex-shrink: 0;
 
 #picks .picks-swiper {
   position: relative;
-  overflow: visible; /* ✅ 점과 화살표가 잘리지 않게 */
+  overflow: hidden; /* ✅ 점과 화살표가 잘리지 않게 */
 }
 
 
@@ -1202,7 +1202,7 @@ font-style: normal;
 #picks a {
   background: #ffffff;
   display: block;
-  width: 58.055%;
+  width: 72.222%;
   height: 278px;
   padding: 30px;
 }
@@ -1226,6 +1226,8 @@ font-style: normal;
 
 #picks .swiper {
   overflow: hidden;
+  max-width:592px; 
+  margin:0 auto;
 }
 
 #picks .picks-swiper {
@@ -1334,6 +1336,7 @@ flex-shrink: 0;
   opacity: 1;
   
 }
+
 
   /* 겹침 방지 */
   #our-promise::before,#community::before,#events::before{content:none;}
