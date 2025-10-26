@@ -609,16 +609,22 @@ margin-bottom: 20px;
 #info-sections {
   margin: 8.888%;
   padding-bottom: 5px;
+  margin-bottom: 120px;
 }
     
 
   #our-promise,
-  #community,
-  #events {
+  #community {
      position: relative;
     height: auto;
     overflow: visible;
-    margin: 120px 0 72px; /* 섹션 간 간격 */
+    margin: 120px 0; /* 섹션 간 간격 */
+  }
+
+  #events {
+    position: relative;
+    height: auto;
+    overflow: visible;
   }
 
     #our-promise .promise-text,
@@ -1171,10 +1177,8 @@ font-style: normal;
     display:none !important;
   }
 
-   #info-sections{margin:64px 24px 96px;}
   #our-promise,#community,#events{
     position:relative;
-    margin:80px 0 96px;
     overflow:visible;
   }
 
@@ -1337,6 +1341,33 @@ flex-shrink: 0;
   
 }
 
+#about {
+  height: 603px;
+}
+
+#about p {
+  color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 133.333% */
+word-break: keep-all;
+}
+
+#about h2{
+font-size: 60px;
+
+font-weight: 400;
+line-height: 1;
+}
+
+#about strong {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  word-break: keep-all;
+}
+
 
   /* 겹침 방지 */
   #our-promise::before,#community::before,#events::before{content:none;}
@@ -1378,6 +1409,8 @@ flex-shrink: 0;
     border-radius:8px;
   }
 
+   
+
   /* 텍스트 박스: 절대배치 제거 + 센터 정렬 */
   #our-promise .promise-text,
   #community   .promise-community,
@@ -1396,19 +1429,18 @@ flex-shrink: 0;
     flex-direction: column;
     align-items: flex-start;  /* 전체 왼쪽 정렬 */
     max-width: 960px;
-    margin: 80px auto;
     padding: 0 24px;
      margin-left: 5%;
   }
 
   #our-promise .promise-text p{
     color: #000;
-
+    width: 582px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5; /* 133.333% */
-    margin-bottom: 44px;
+    line-height: 24px; /* 133.333% */
+    margin-bottom: 34px;
   }
 
   #our-promise .promise-text h3 {
@@ -1438,7 +1470,7 @@ flex-shrink: 0;
     color: #000;
 
     font-size: 18px;
-
+    margin-top: 10px;
     font-weight: 500;
     line-height: 1;
     margin-bottom: 20px;
@@ -1460,7 +1492,26 @@ flex-shrink: 0;
   align-self: flex-start;          /* 부모가 flex여도 왼쪽 */
 }
 
+#community .promise-community span {
+font-size: 18px;
+font-weight: 400;
+line-height: 1;
+}
 
+#community .promise-community h3 {
+  margin-top: 5px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1 ;
+}
+
+#community .promise-community p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
   
 #community .promise-community {
     display: flex;
@@ -1471,6 +1522,29 @@ flex-shrink: 0;
     margin-left: 25%;         /* 이미지 왼쪽 라인에 맞추는 핵심 */
     margin-top: 16px;
   }
+
+#events .promise-event span {
+  color: #000;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: 1;
+}
+
+#events .promise-event h3 {
+  color: #000;
+text-align: center;
+font-size: 60px;
+font-weight: 400;
+line-height: 1;
+}
+
+#events .promise-event p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
 
 #community .btn,
 #community button.btn {
