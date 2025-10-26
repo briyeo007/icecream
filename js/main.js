@@ -70,7 +70,7 @@ new Swiper("#picks .picks-swiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 24,
+      spaceBetween: 20,
     },
   },
 });
@@ -88,7 +88,7 @@ new Swiper("#picks .picks-swiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 24,
+      spaceBetween: 20,
     },
   },
 });

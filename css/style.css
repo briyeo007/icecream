@@ -1343,16 +1343,15 @@ flex-shrink: 0;
 
   /* 상단 이미지: 섹션별 배경을 가로 꽉 + 일정 높이 */
   .bg_our-promise{
-    position:relative !important;
-    display:block !important;
-     width: 560px !important;
-    max-width:none !important;          /* 피그마 비율에 맞춘 콘텐츠 폭 */
-    height:360px !important;  /* 스샷 높이감 */
+    position:relative ;
+    display:block;
+     width: 560px;
+    max-width:none;          /* 피그마 비율에 맞춘 콘텐츠 폭 */
+    height:360px;  /* 스샷 높이감 */
     margin-left: 0;
-    background-position:center center !important;
-    background-size:cover !important;
-    background-repeat:no-repeat !important;
-    border-radius:8px;
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
   }
 
   .bg_community {
@@ -1402,8 +1401,48 @@ flex-shrink: 0;
      margin-left: 5%;
   }
 
+  #our-promise .promise-text p{
+    color: #000;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 133.333% */
+    margin-bottom: 44px;
+  }
+
+  #our-promise .promise-text h3 {
+    color: #000;
+  
+    font-size: 60px;
+
+    font-weight: 400;
+    line-height: 1;
+  }
+
+
   /* 이미지 */
 
+   .promise-text span {
+    color: #000;
+    text-align: center;
+
+    font-size: 18px;
+
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 11px;
+  }
+
+  .promise-text strong {
+    color: #000;
+
+    font-size: 18px;
+
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
 
   #our-promise .promise-text  {
     display: flex;
@@ -1417,7 +1456,7 @@ flex-shrink: 0;
 
   #our-promise .btn,
 #our-promise button.btn {
-  margin: 16px 0 0 0 !important;  /* auto 제거 */
+  
   align-self: flex-start;          /* 부모가 flex여도 왼쪽 */
 }
 
@@ -1451,9 +1490,7 @@ flex-shrink: 0;
   align-self: flex-start;  /* 각 요소를 왼쪽으로 고정 */
 }
 
-#our-promise .promise-text p{
-    width: 100%;
-  }
+
 
   #our-promise .promise-text {
     margin-left: 0;
@@ -1480,36 +1517,17 @@ flex-shrink: 0;
   }
 
   /* 타이틀/카피/버튼 간 간격 */
-  .promise-text span {
-    font-size:16px; 
-    line-height:22px; 
-    margin-bottom:6px;
-  }
-  .promise-text h3,
-  .promise-community h3,
-  .promise-event h3{
-    font-family:"Just Another Hand";
-    font-size:56px; line-height:1; margin:6px 0 10px;
-  }
-  #our-promise .promise-text strong {
-    display:block; 
-    margin:12px 0 8px;
-  }
+ 
+  
+ 
 
-  .promise-text p,
-  .promise-community p,
-  .promise-event p{
-    font-size:14px; line-height:20px;
-    max-width:520px; margin:0 auto;
-    letter-spacing:.01em; word-break:keep-all; opacity:.95;
-  }
+  
 
   /* 버튼: 가운데 정렬 + 위 여백 통일 */
   #our-promise .btn,
   #community .btn,
   #events .btn{
-    margin:16px auto 0; 
-    height:46px; 
+  margin: 0;
     padding:0 26px;
   }
 
