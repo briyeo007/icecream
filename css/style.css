@@ -623,13 +623,17 @@ margin-bottom: 20px;
     height: auto;
     overflow: visible;
     margin: 120px 0; /* 섹션 간 간격 */
+    width: 100%;
   }
 
   #events {
     position: relative;
     height: auto;
     overflow: visible;
+    width: 100%;
   }
+
+
 
     #our-promise .promise-text,
   #community   .promise-community,
@@ -1167,11 +1171,13 @@ font-style: normal;
 
   #commitment h3 {
     margin:10px 0 8px;
-    font-size:18px;
+    font-size:20px;
   }
 
   #commitment .swiper-slide p {
     max-width:240px;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   /* 커밋먼트: 내비/도트 숨김 (스샷 기준 없음) */
@@ -1179,13 +1185,6 @@ font-style: normal;
   #commitment .swiper-button-next,
   #commitment .swiper-pagination{
     display:none !important;
-  }
-
-  #our-promise,#community,#events{
-    position:relative;
-    overflow:visible;
-    margin-left: auto;
-    width: 87.125%;
   }
 
   /* Picks Section */
@@ -1212,25 +1211,25 @@ font-style: normal;
 #picks a {
   background: #ffffff;
   display: block;
-  width: 100%;
-  height: 278px;
+  width: 260px;
+  height: 379px;
   padding: 30px;
 }
 
 #picks .picks p {
   color: #000;
-  font-size: 14px;
+  font-size: 18px;
   letter-spacing: .04em;
-  margin-bottom: 1px;
+  margin-bottom: 13px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1;
 }
 
 #picks .picks h2 {
   color: #000;
   text-align: center;
   font-family: "Just Another Hand";
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 400;
 }
 
@@ -1265,8 +1264,8 @@ font-style: normal;
   display: flex;
   justify-content: center; /* ✅ 수평 중앙 */
   align-items: center;     /* ✅ 수직 중앙 */
-  width: 114px;
-  height: 127px;
+  width: 150px;
+  height: 168px;
   margin: 0 auto;          /* ✅ 여분 정렬 */
 }
 
@@ -1281,20 +1280,21 @@ font-style: normal;
 #picks h3 {
   color: #000;
 text-align: center;
-font-size: 16px;
+font-size: 22px;
 font-style: normal;
 font-weight: 500;
-line-height: 22px; /* 137.5% */
-margin-top: 10px;
+line-height: 1; /* 137.5% */
+margin-top: 28px;
+margin-bottom: 10px;
 }
 
 #picks .swiper-slide p {
  color: #000;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px; /* 142.857% */
+  line-height: 24px; /* 142.857% */
   margin-top: 10px;
 }
 
@@ -1307,24 +1307,16 @@ height: 50px;
   color: #6B4F4F;
 }
 
-#picks .swiper-button-prev {
-  left: 15px;
-}
-
-#picks .swiper-button-next {
-  right: 15px;
-}
-
 #picks .swiper-button-prev::after,
 #picks .swiper-button-next::after {
-   width: 30px;
+  width: 30px;
 height: 50px;
 flex-shrink: 0;
   aspect-ratio: 20/33;
   margin: 8.88%;
   font-size: 40px;
   line-height: 1;
-  }
+}
   
 /* 페이지네이션 점 */
 #picks .swiper-pagination {
@@ -1396,7 +1388,7 @@ line-height: 1;
     display:block;
      width: 100%;
     height:359px;  /* 스샷 높이감 */
-    margin-left: 25%;
+    margin-left: 20%;
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -1404,20 +1396,19 @@ line-height: 1;
   }
 
   .bg_events {
-    position:relative !important;
-    display:block !important;
-    width: 442px !important;
-    height:334px !important;  /* 스샷 높이감 */
+    position:relative ;
+    display:block;
+    width: 442px;
+    height:334px;  /* 스샷 높이감 */
     margin:0 auto 20px;
-    background-position:center center !important;
-    background-size:cover !important;
-    background-repeat:no-repeat !important;
+    background-position:center center;
+    background-size:cover;
+    background-repeat:no-repeat;
     border-radius:8px;
   }
 
   #info-sections .inner {
     width: 88%;
-    margin: 0 auto;
   }
 
    
@@ -1499,6 +1490,11 @@ line-height: 1;
 #our-promise button.btn {
   
   align-self: flex-start;          /* 부모가 flex여도 왼쪽 */
+}
+
+#community {
+  width: 586px;
+  margin-right: 0;
 }
 
 #community .promise-community span {
@@ -1591,6 +1587,10 @@ line-height: 1;
     width: 100%;
   }
 
+  #events {
+    width: 608px;
+  }
+
   #community .promise-community span,
   #community .promise-community h3,
   #community .promise-community p,
@@ -1600,8 +1600,6 @@ line-height: 1;
   }
 
   /* 타이틀/카피/버튼 간 간격 */
- 
-  
  
 
   
@@ -1616,16 +1614,16 @@ line-height: 1;
 
   /* Picks 스와이퍼: 화살표/점 여백 살짝 조정(스샷 간격) */
   #picks .swiper-button-prev {
-    left:8px;
+    left: -10px;
   }
 
   #picks .swiper-button-next {
-    right:8px;
+    right: -10px;
   }
 
   #picks .swiper-pagination {
-    bottom:18px !important;
-    margin-top:8px;
+    bottom:18px;
+    margin-top:30px;
   }
 
   /* Instagram = Picks와 동일 레이아웃 (768에서 2장) */
@@ -1712,12 +1710,12 @@ height: 50px;
   color: #6B4F4F;
 }
 
-#commitment .swiper-button-prev {
-  left: 15px;
+#instagram .swiper-button-prev {
+  left: -10px;
 }
 
-#commitment .swiper-button-next {
-  right: 15px;
+#instagram .swiper-button-next {
+  right: -10px;
 }
 
 /* 아이콘 크기 */
