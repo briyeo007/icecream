@@ -1306,7 +1306,7 @@ margin-bottom: 10px;
 #picks .swiper-button-next {
  width: 10px;
 height: 50px;
-  top: calc(50% - 10px);
+  top: calc(50% + 10px);
   color: #6B4F4F;
 }
 
@@ -1395,19 +1395,17 @@ line-height: 1;
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    border-radius:8px;
   }
 
   .bg_events {
     position:relative ;
     display:block;
-    width: 442px;
+    width: 100%;
     height:334px;  /* 스샷 높이감 */
     margin:0 auto 20px;
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    border-radius:8px;
   }
 
   #info-sections {
@@ -1594,7 +1592,8 @@ line-height: 1;
   }
 
   #events {
-    width: 608px;
+    width: 87.125%;  /* 전체 왼쪽 정렬 */
+    margin: auto;
   }
 
   #community .promise-community span,
@@ -1712,7 +1711,7 @@ line-height: 1;
 #instagram .swiper-button-next {
 width: 10px;
 height: 50px;
-  top: calc(50% - 10px);
+  top: calc(50% + 10px);
   color: #6B4F4F;
 }
 
