@@ -1163,18 +1163,21 @@ font-style: normal;
     background:#fff;
     border-radius:10px;
     margin-top: 40px;
-    gap: 20px;
   }
 
   #commitment .icon {
-    width:84px;
-    height:84px;
-    margin:0 auto;
+    width:100px;
+    height:100px;
   }
 
   #commitment h3 {
-    margin:10px 0 8px;
     font-size:20px;
+    color: #000000;
+  /* font-size: 18px; */
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0.02em; /* 살짝 여유 있는 자간 */
+  /* margin-bottom: 10px; 제목과 본문 간격 */
   }
 
   #commitment .swiper-slide p {
@@ -1288,7 +1291,7 @@ font-style: normal;
 font-weight: 500;
 line-height: 1; /* 137.5% */
 margin-top: 28px;
-margin-bottom: 10px;
+margin-bottom: 11px;
 }
 
 #picks .swiper-slide p {
@@ -1298,7 +1301,7 @@ margin-bottom: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 142.857% */
-  margin-top: 10px;
+
 }
 
 /* 화살표 */
@@ -1396,6 +1399,19 @@ line-height: 1;
     background-size:cover;
     background-repeat:no-repeat;
   }
+
+  button:not(.menu-toggle), .btn {
+    /* background: rgb(53, 52, 57);
+    color: rgb(255, 255, 255);
+    display: inline-block; */
+    margin-top: 40px;
+    width: 145px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 54px;
+}
 
   .bg_events {
     position:relative ;
