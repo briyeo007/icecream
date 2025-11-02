@@ -2347,6 +2347,7 @@ font-size: 18px;
 font-weight: 400;
 line-height: 1;
 text-align: right;
+align-self: flex-end;
 }
 
 #community .promise-community h3 {
@@ -2356,6 +2357,7 @@ text-align: right;
   font-weight: 400;
   line-height: 1 ;
   text-align: right;
+  align-self: flex-end;
 }
 
 #community .promise-community p {
