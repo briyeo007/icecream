@@ -1250,7 +1250,6 @@ font-style: normal;
 
 #picks .picks-swiper {
   position: relative;
-  overflow: visible; /* ✅ 점과 화살표가 잘리지 않게 */
 }
 
 
@@ -1593,9 +1592,8 @@ line-height: 1;
   }
 
   #events {
-    width: 100%;
+    width: 87.125%;
     align-items: center;
-    margin:0 8.222%;
   }
 
   #community .promise-community span,
@@ -1638,7 +1636,7 @@ line-height: 1;
   margin-top: 30px;
   width: 145px;
   align-items: center;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   line-height: 54px;
 }
@@ -1748,20 +1746,20 @@ flex-shrink: 0;
 
 /* 하단 버튼 */
 #instagram .btn {
- background: #353439;
+ /* background: #353439;
   color: #fff;
   display: inline-block;
-  margin-top: 47px;
-  width: 132px;
-  height: 49px;
-  align-items: center;
-  font-size: 16px;
-  text-align: center;
-  line-height: 49px;
+  /* margin-top: 32px; */
+  width: 145px;
+  height: 54px;
+  /* align-items: center; */
+  font-size: 18px;
+  /* text-align: center; */
+  line-height: 54px;
 }
 
 #contact {
-  padding: 120px 20px;
+  padding: 150px 20px;
   color: #3b2b2b;
 }
 
@@ -1786,7 +1784,7 @@ margin-bottom: 40px;
 .contact-us form {
   width: 60%;
   position: relative;
-  margin: 30px auto 0;
+  margin: 0 auto ;
 }
 
 .contact-us label {
@@ -2270,7 +2268,6 @@ line-height: 1;
     display: flex;
     flex-direction: row;
     align-items: flex-start;  /* 전체 왼쪽 정렬 */
-    width: 916px;
     gap: 50px;
   }
 
@@ -2341,7 +2338,6 @@ line-height: 1;
     display: flex;
     flex-direction: row-reverse;
     margin: 120px 0px;
-    width: 916px;
     margin-left: 0;
     gap: 50px;
   }
@@ -2438,15 +2434,13 @@ line-height: 1;
   }
 
   #events {
-        display: flex;
+       display: flex;
         flex-direction: row;
         align-items: flex-start;
-        width: 916px;
         gap: 50px;
-        margin-left: 0;
     }
 
-  }
+ 
 
  
 
@@ -2521,6 +2515,7 @@ line-height: 1;
 
   #instagram .instagram-swiper {
     overflow: hidden; 
+    max-width: 900px;
   }
 
   #instagram .instagram-swiper .swiper-slide{ 
@@ -2680,4 +2675,4 @@ footer .social {
   margin-top: 10px ;
 }
 
-
+ }
