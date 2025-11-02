@@ -59,6 +59,11 @@ new Swiper("#picks .picks-swiper", {
   loop: false,
   spaceBetween: 16,
   centeredSlides: false,
+
+  // ✅ 한 화면에 다 보여도 점 강제 유지
+  watchOverflow: false,
+  allowTouchMove: true,
+
   navigation: {
     nextEl: "#picks .swiper-button-next",
     prevEl: "#picks .swiper-button-prev",
@@ -72,8 +77,13 @@ new Swiper("#picks .picks-swiper", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 17,
+    }
   },
 });
+
 
 
   new Swiper(".instagram-swiper", {
@@ -90,6 +100,10 @@ new Swiper("#picks .picks-swiper", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
+    1024: { 
+      slidesPerView: 3, 
+      spaceBetween: 24 
+    }
   },
 });
 });
