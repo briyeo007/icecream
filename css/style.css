@@ -240,7 +240,7 @@ font-style: normal;
 
 /* 슬라이드 카드 */
 #commitment .commit-wrapper {
-  width: auto;
+  width: auto !important;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -287,6 +287,8 @@ font-style: normal;
 
 #commitment .icon.community {
   background-image: url("../images/icons/community.svg");
+  width: 100px;
+  height: 100px;
 }
 
 /* 제목/설명 */
@@ -611,14 +613,9 @@ margin-bottom: 20px;
 
 
 #info-sections {
-
+  margin: 8.888%;
   padding-bottom: 5px;
   margin-bottom: 120px;
-}
-
-#info-sections .inner {
-  width: 82.222%;
-  margin: 0 auto;
 }
     
 
@@ -724,11 +721,6 @@ margin-bottom: 20px;
     line-height: 20px;
     word-break: keep-all;
     letter-spacing: 0.01em;
-  }
-
-  .promise-text p,
-  .promise-event p {
-    margin-bottom: 32px;
   }
 
 .promise-community p
@@ -1030,15 +1022,15 @@ footer .social a[href*="tiktok"] {
   width: 100%;
   background: #32373C;
   z-index: 100;
-}
+/* } */
 
 .header {
-  display: flex;
+  /* display: flex; 
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  width: 82.222%;
-  margin: 0 auto;
+  /* height: 100px; */
+  width: 89.979%;
+  /* margin: 0 auto; */
 } */
 
   
@@ -1067,7 +1059,7 @@ footer .social a[href*="tiktok"] {
 
   #hero .inner {
   position: relative;
-  width: 82.222%;
+  width: 89.979%;
   margin: 0 auto;
   height: 744px; 
   padding-top: 203px;
@@ -1126,7 +1118,7 @@ footer .social a[href*="tiktok"] {
 
   /* Commitment: 타이틀 중앙 + 2x2 그리드(스와이퍼 해제) */
   #commitment {
-    width: 82.222%;
+  width: 89.979%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -1161,7 +1153,7 @@ font-style: normal;
   #commitment .swiper-wrapper {
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
-    transform:none !important;
+    transform:none;
   }
 
  #commitment .swiper-slide {
@@ -1210,7 +1202,7 @@ font-style: normal;
 }
 
 #picks .our-pick {
-  width: 82.222%;
+  width: 89.979%;
   margin: 0 auto;
   margin-top: 120px;
   position: relative;
@@ -1225,7 +1217,7 @@ font-style: normal;
 #picks a {
   background: #ffffff;
   display: block;
-  width: 85%;
+  width: 100%;
   height: 379px;
   padding: 30px;
 }
@@ -1255,6 +1247,8 @@ font-style: normal;
 
 #picks .picks-swiper {
   position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 
 
@@ -1331,10 +1325,6 @@ flex-shrink: 0;
   font-size: 40px;
   line-height: 1;
 }
-
-#picks .swiper-button-next::after{
-  text-align: right;
-}
   
 /* 페이지네이션 점 */
 #picks .swiper-pagination {
@@ -1359,6 +1349,10 @@ flex-shrink: 0;
 
 #about {
   height: 603px;
+}
+
+#about .about-inner {
+  width: 89.979%;
 }
 
 #about p {
@@ -1392,7 +1386,7 @@ line-height: 1;
   .bg_our-promise{
     position:relative ;
     display:block;
-     width: 87.724%;
+     width:100%;
     max-width:none;          /* 피그마 비율에 맞춘 콘텐츠 폭 */
     height:360px;  /* 스샷 높이감 */
     margin-left: 0;
@@ -1405,7 +1399,7 @@ line-height: 1;
   .bg_community {
     position:relative;
     display:block;
-     width: 87.724%;
+     width: 85%;
     height:359px;  /* 스샷 높이감 */
     margin-left: 20%;
     background-position: center center;
@@ -1416,22 +1410,22 @@ line-height: 1;
   .bg_events {
     position:relative ;
     display:block;
-    width: 66.167%;
+    width: 100%;
     height:334px;  /* 스샷 높이감 */
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    margin: 0 auto 20px;
   }
 
   #info-sections {
-  margin: 120px 0;
-  
+  margin: 120px auto;
+  padding-bottom: 5px;
+
 }
 
   #info-sections .inner {
-    width: 82.222%;
-    margin: 0 auto;
+      width: 89.979%;
+      margin: 0 auto;
   }
 
    
@@ -1453,17 +1447,17 @@ line-height: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;  /* 전체 왼쪽 정렬 */
-    width: 86.979%;
+    width: 87.125%;
   }
 
   #our-promise .promise-text p{
     color: #000;
     width: 100%;
     font-size: 18px;
-    font-style: normal; 
+    font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
-    margin-bottom: 44px;
+    margin-bottom: 34px;
   }
 
   #our-promise .promise-text h3 {
@@ -1515,9 +1509,8 @@ line-height: 1;
 }
 
 #community {
-    margin-top: 120px;
-    margin-bottom: 150px;
-    width: 86.979%;
+    margin: 120px 8.888% 150px;
+    width: 87.125%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1602,7 +1595,7 @@ line-height: 1;
   }
 
   #events {
-    width: 100%;
+    width: 87.125%;
     align-items: center;
     margin: 0 auto;
   }
@@ -1736,11 +1729,11 @@ height: 50px;
 }
 
 #instagram .swiper-button-prev {
-  left: -10px;
+  left: -40px;
 }
 
 #instagram .swiper-button-next {
-  right: -10px;
+  right: -40px;
 }
 
 /* 아이콘 크기 */
@@ -1857,16 +1850,16 @@ footer .social {
   width: 100%;
   background: #32373C;
   z-index: 100;
-}
+} */
 
 .header {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  width: 82.222%;
-  margin: 0 auto;
-} */
+  /* height: 100px; */
+  width: 89.746%;
+  /* margin: 0 auto; */
+}
 
   
   .header h1 img {
@@ -1894,7 +1887,7 @@ footer .social {
 
   #hero .inner {
   position: relative;
-  width: 82.222%;
+  width: 89.746%;
   margin: 0 auto;
   height: 744px; 
   padding-top: 212px;
@@ -1953,7 +1946,7 @@ footer .social {
 
   /* Commitment: 타이틀 중앙 + 2x2 그리드(스와이퍼 해제) */
   #commitment {
-    width: 82.222%;
+  width: 89.746%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
@@ -2043,7 +2036,7 @@ font-style: normal;
 }
 
 #picks .our-pick {
-  width: 82.222%;
+  width: 89.746%;
   margin: 0 auto;
   margin-top: 120px;
   position: relative;
@@ -2150,10 +2143,11 @@ margin-bottom: 10px;
 /* 화살표 */
 #picks .swiper-button-prev,
 #picks .swiper-button-next {
- width: 10px;
+ width: 30px;
 height: 50px;
   top: calc(50% - 10px);
   color: #6B4F4F;
+  display: none;
 }
 
 #picks .swiper-button-prev::after,
@@ -2190,6 +2184,10 @@ flex-shrink: 0;
 
 #about {
   height: 603px;
+}
+
+#about .about-inner {
+  width: 89.746%;
 }
 
 #about p {
@@ -2255,14 +2253,14 @@ line-height: 1;
   }
 
   #info-sections {
-  margin: 120px 8.222%;
-  width: 100%;
+  margin: 120px 0;
+  
   padding-bottom: 5px;
 }
 
   #info-sections .inner {
-    margin: auto;
-    width: 100%;
+    margin: 0 auto;
+    width: 89.746%;
   }
 
    
@@ -2575,18 +2573,18 @@ line-height: 1;
 /* ✅ 화살표를 이미지 밑쪽 중앙에 배치 */
 #instagram .swiper-button-prev,
 #instagram .swiper-button-next {
-width: 10px;
+width: 30px;
 height: 50px;
   top: calc(50% - 10px);
   color: #6B4F4F;
 }
 
 #instagram .swiper-button-prev {
-  left: -10px;
+  left: -50px;
 }
 
 #instagram .swiper-button-next {
-  right: -10px;
+  right: -50px;
 }
 
 /* 아이콘 크기 */
