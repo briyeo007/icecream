@@ -91,6 +91,9 @@ new Swiper("#picks .picks-swiper", {
     loop: false,
     spaceBetween: 16,
     centeredSlides: false,
+     watchOverflow: false,
+  allowTouchMove: true,
+
     navigation: {
       nextEl: "#instagram .swiper-button-next",
       prevEl: "#instagram .swiper-button-prev",

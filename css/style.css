@@ -720,7 +720,6 @@ margin-bottom: 20px;
     color: #000;
     text-align: center;
     font-size: 14px;
-    margin: 0 auto;
     line-height: 20px;
     word-break: keep-all;
     letter-spacing: 0.01em;
@@ -1182,18 +1181,17 @@ font-style: normal;
   }
 
   #commitment .icon {
-    width:84px;
-    height:84px;
+    width:100px;
+    height:100px;
     margin: 0;
   }
 
   #commitment h3 {
-    margin:10px 0 8px;
     font-size:20px;
   }
 
   #commitment .swiper-slide p {
-    max-width:240px;
+    width: 234px;
     font-size: 18px;
     line-height: 24px;
   }
@@ -1259,7 +1257,7 @@ font-style: normal;
 
 #picks .picks-swiper {
   position: relative;
-  width: 86.979%;
+  width: 81.979%;
   margin: 0 auto;
   
 }
@@ -1378,6 +1376,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 133.333% */
 word-break: keep-all;
+width: 646px;
 }
 
 #about h2{
@@ -1392,6 +1391,7 @@ line-height: 1;
   font-weight: 500;
   line-height: 28px;
   word-break: keep-all;
+  width: 518px;
 }
 
 
@@ -1468,7 +1468,7 @@ line-height: 1;
 
   #our-promise .promise-text p{
     color: #000;
-    width: 100%;
+    width: 582px;
     font-size: 18px;
     font-style: normal; 
     font-weight: 400;
@@ -1550,10 +1550,9 @@ line-height: 1;
 #community .promise-community p {
   font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 10px;
+  line-height: 24px;        
   margin-top: 10px;
-  width: 100%;
+  width: 559px;
 }
   
 #community .promise-community {
@@ -1587,6 +1586,8 @@ line-height: 1;
   line-height: 24px;
   margin-bottom: 30px;
   text-align: center;
+  width: 608px;
+  margin-left: 50px;
 }
 
   #our-promise .promise-text span,
@@ -1595,6 +1596,7 @@ line-height: 1;
   #our-promise .promise-text strong {
   text-align: left;
   align-self: flex-start;  /* 각 요소를 왼쪽으로 고정 */
+  width: 608px;
 }
 
 
@@ -1605,10 +1607,6 @@ line-height: 1;
 
   #community   .promise-community {
     margin-right: 0;
-  }
-
-  #events .promise-event p {
-    width: 100%;
   }
 
   #events {
@@ -1637,11 +1635,11 @@ line-height: 1;
 
   /* Picks 스와이퍼: 화살표/점 여백 살짝 조정(스샷 간격) */
   #picks .swiper-button-prev {
-    left: -10px;
+    left: 10px;
   }
 
   #picks .swiper-button-next {
-    right: -10px;
+    right: 10px;
   }
 
   #picks .swiper-pagination {
@@ -1654,7 +1652,7 @@ line-height: 1;
   background: #353439;
   color: #fff;
   display: inline-block;
-  margin-top: 30px;
+  margin-top: 40px;
   width: 145px;
   align-items: center;
   font-size: 18px;
@@ -1700,14 +1698,21 @@ line-height: 1;
   }
 
   #instagram .instagram-swiper .swiper-slide{ 
-    width:284px ; 
+    width: 100% ; 
     flex:0 0 284px ; 
+
   }
 
   #instagram .swiper-slide{ /* 한 장 크기 고정 */
     flex: 0 0 284px ;
     display: flex;
     justify-content: center;
+    
+  }
+
+  #instagram .swiper-slide, #instagram .thumb {
+    width: 250px;
+      height: 284px;
   }
 
   #instagram .thumb {
@@ -1718,14 +1723,10 @@ line-height: 1;
   }
 
   #instagram .thumb img{
-    width: 100%;
-    height: 100%;
+    width: 284px;
+    height: 284px;
     object-fit: cover;
     display: block;
-  }
-
-  #instagram .swiper-slide, #instagram .thumb {
-    height:284px;
   }
 
   #instagram .swiper-wrapper {
@@ -1747,11 +1748,11 @@ height: 50px;
 }
 
 #instagram .swiper-button-prev {
-  left: -10px;
+  left: 10px;
 }
 
 #instagram .swiper-button-next {
-  right: -10px;
+  right: 10px;
 }
 
 /* 아이콘 크기 */
@@ -1770,8 +1771,8 @@ flex-shrink: 0;
 #instagram .btn {
  /* background: #353439;
   color: #fff;
-  display: inline-block;
-  /* margin-top: 32px; */
+  /* display: inline-block; */
+  margin-top: 47px;
   width: 145px;
   height: 54px;
   /* align-items: center; */
@@ -2003,8 +2004,7 @@ font-style: normal;
     grid-template-columns:repeat(2,minmax(0,1fr));
     transform:none;
     margin-left: 20px;
-    gap: 60px;
-    margin-top: 46px;
+    gap: 20px;
   }
 
    #commitment .swiper-slide {
@@ -2018,7 +2018,11 @@ font-style: normal;
     padding:0;
     background:#fff;
     border-radius:10px;
-    gap: 20px;
+  }
+
+  #commitment .commit-text {
+    justify-items: flex-start;
+    margin-left: 30px;
   }
 
   #commitment .icon {
@@ -2033,9 +2037,10 @@ font-style: normal;
   }
 
   #commitment .swiper-slide p {
-    max-width:240px;
+    width: 234px;
     font-size: 18px;
     line-height: 24px;
+    text-align: left;
   }
 
   /* 커밋먼트: 내비/도트 숨김 (스샷 기준 없음) */
@@ -2204,6 +2209,10 @@ flex-shrink: 0;
   height: 603px;
 }
 
+#about .about-inner {
+  width: 89.746%;
+}
+
 #about p {
   color: #FFF;
 font-size: 18px;
@@ -2211,7 +2220,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 133.333% */
 word-break: keep-all;
-margin-bottom: 20px;
+width: 580px;
 }
 
 #about h2{
@@ -2228,6 +2237,9 @@ line-height: 1;
   word-break: keep-all;
 }
 
+#about .btn {
+  margin-top: 50px;
+}
 
   /* 겹침 방지 */
   #our-promise::before,#community::before,#events::before{content:none;}
@@ -2237,7 +2249,7 @@ line-height: 1;
     position:relative ;
     display:block;
     width:405px;       
-    height:360px;  /* 스샷 높이감 */
+    height:357px;  /* 스샷 높이감 */
     margin-left: 0;
     background-position:center center;
     background-size:cover;
@@ -2260,10 +2272,11 @@ line-height: 1;
     position:relative ;
     display:block;
     width: 360px;
-    height:334px;  /* 스샷 높이감 */
+    height:350px;  /* 스샷 높이감 */
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
+    margin-right: 0;
   }
 
   #info-sections {
@@ -2300,12 +2313,12 @@ line-height: 1;
 
   #our-promise .promise-text p{
     color: #000;
-    width: 100%;
+    width: 376px;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 24px; /* 133.333% */
-    margin-bottom: 34px;
+    margin-bottom: 40px;
   }
 
   #our-promise .promise-text h3 {
@@ -2391,9 +2404,9 @@ align-self: flex-end;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
   margin-top: 10px;
-  width: 100%;
+  width: 370px;
   text-align: right;
 }
   
@@ -2428,7 +2441,10 @@ line-height: 1;
   font-weight: 400;
   line-height: 24px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: left;
+  width: 368px;
+  margin-left: 0;
+  margin-top: 0;
 }
 
   #our-promise .promise-text span,
@@ -2447,6 +2463,8 @@ line-height: 1;
     text-align: center;      /* 내부 글씨는 중앙 */
     width: fit-content;
     margin-top: 20px;
+    margin-left: 51px;
+    
   }
 
   #our-promise .promise-text {
@@ -2457,16 +2475,11 @@ line-height: 1;
     margin-right: 0;
   }
 
-  #events .promise-event p {
-    width: 100%;
-    text-align: left;
-  }
 
   #events {
        display: flex;
         flex-direction: row;
         align-items: flex-start;
-        gap: 50px;
     }
 
  
@@ -2481,7 +2494,7 @@ line-height: 1;
   #events .btn{
   margin: 0;
     padding:0 26px;
-  }
+    }
 
   /* Picks 스와이퍼: 화살표/점 여백 살짝 조정(스샷 간격) */
   #picks .swiper-button-prev {
@@ -2530,6 +2543,7 @@ line-height: 1;
     font-size: 60px;
     font-weight: 400;
     line-height: 1;
+    margin-top: 0;
   }
 
   #instagram .inner {
@@ -2594,11 +2608,11 @@ height: 50px;
 }
 
 #instagram .swiper-button-prev {
-  left: -50px;
+  left: -40px;
 }
 
 #instagram .swiper-button-next {
-  right: -50px;
+  right: -40px;
 }
 
 /* 아이콘 크기 */
