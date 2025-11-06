@@ -114,7 +114,7 @@ header .menu-container nav{
   right: 0;
   background: #32373C;
   text-align: center;
-  padding: 16px 20px;
+  padding: 47px 52px;
 }
 
 header .menu-container.active {
@@ -1872,12 +1872,13 @@ footer .social {
 } */
 
 .header {
-  /* display: flex; 
-  justify-content: space-between;
+  display: flex;  
+  justify-content: flex-start;
   align-items: center;
   /* height: 100px; */
   width: 89.746%;
   /* margin: 0 auto; */
+  
 } 
 
   
@@ -1887,6 +1888,38 @@ footer .social {
   margin-top: 12px;
   margin-bottom: 12px;
 }
+
+header .menu-toggle {
+        display: none; /* 햄버거 숨김 */
+    }
+
+    header .menu-container nav {
+      padding: 40px 52px;
+      width: 100%;
+      left: 88.746%;
+    }
+
+  header .menu-container {
+   position: absolute;               /* ✅ 헤더 기준 중앙 배치 */
+        right: 0;
+        top: 0;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+  }
+
+   header .menu-container ul {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    font-size: 18px;
+   }
+
 
   .menu-toggle span {
   /* display: block;
@@ -2608,11 +2641,11 @@ height: 50px;
 }
 
 #instagram .swiper-button-prev {
-  left: -40px;
+  left: -10px;
 }
 
 #instagram .swiper-button-next {
-  right: -40px;
+  right: -10px;
 }
 
 /* 아이콘 크기 */
@@ -2723,10 +2756,11 @@ footer .social {
   margin-top: 20px ;
   
 }
+}
 
 @media (min-width:1920px){
   .header {
     width: 78.906%;
   }
   }
- }
+ 
