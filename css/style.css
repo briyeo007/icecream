@@ -2815,6 +2815,86 @@ footer .social {
   width: 1520px;
 }
 
+.bg_our-promise {
+    width: 610px;
+    height: 450px;
+}
+
+.bg_community {
+    width: 611px;
+    height: 450px;
+}
+
+.bg_events {
+    width: 612px;
+    height: 562px;
+}
+
+  /* 텍스트 박스: 절대배치 제거 + 센터 정렬 */
+  #our-promise .promise-text,
+  #community   .promise-community,
+  #events      .promise-event{
+    position:static;
+    transform:none;
+    width:100%;
+    max-width:none;
+    margin:0 auto;
+    z-index:1;
+    align-items: center;
+  }
+
+  #our-promise {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;  /* 전체 왼쪽 정렬 */
+    gap: 80px;
+    
+  }
+
+  #our-promise .promise-text {
+    margin-top: 46px;
+  }
+
+#our-promise .promise-text p {
+  width: 389px;
+}
+
+#community {
+  display: flex;
+  justify-content: space-between; /* 텍스트 왼쪽, 이미지 오른쪽 */
+  align-items: center;            /* ✅ 이미지와 텍스트를 수직 중앙선에 맞춤 */
+  gap: 80px;
+  width: 86.979%;
+  margin: 120px auto;
+}
+
+#community .promise-community {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* ✅ 내부 p, 버튼 등 세로 중앙 정렬 */
+  align-items: flex-end; /* 왼쪽 정렬 */
+  max-width: 570px;        /* 텍스트 폭 제한 */
+  text-align: left;
+}
+
+#community .promise-community p {
+  width: 568px;
+  align-items: flex-end;
+}
+
+#events {
+  gap: 80px;
+}
+
+#events .promise-event {
+  margin-top: 120px;
+  align-items: flex-start;
+}
+
+#events .promise-event p {
+  width: 525px;
+}
+
 #info-sections .inner {
     width: 1520px;
 }
