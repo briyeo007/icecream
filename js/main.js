@@ -80,6 +80,10 @@ new Swiper("#picks .picks-swiper", {
     1024: {
       slidesPerView: 3,
       spaceBetween: 17,
+    },
+    1600: {
+      slidesPerView: 4,
+      spaceBetween: 24,
     }
   },
 });
@@ -106,6 +110,10 @@ new Swiper("#picks .picks-swiper", {
     1024: { 
       slidesPerView: 3, 
       spaceBetween: 24 
+    },
+    1600: {
+      slidesPerView: 4,
+      spaceBetween: 24,
     }
   },
 });

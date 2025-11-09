@@ -2760,7 +2760,81 @@ footer .social {
 
 @media (min-width:1920px){
   .header {
-    width: 78.906%;
+    width: 1520px;
   }
-  }
- 
+      header .menu-container nav {
+        padding: 40px 400px;
+        width: 100%;
+        left: 88.746%;
+    }
+    #hero .inner {
+      width: 1520px;
+    
+}
+
+    .hero-text p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.45;
+        width: 484px;
+        word-break: keep-all;
+    }
+
+  #commitment {
+    width: 1520px;
+
+}
+
+#commitment .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    gap: 64px;
+    margin-left: 150px;
+}
+
+#commitment .swiper-slide {
+  display: flex;
+  flex-direction: column;
+}
+
+#picks .our-pick {
+    width: 1520px;
+}
+
+#picks .swiper-wrapper {
+  margin-left: 70px;
+  gap: 80px;
+}
+
+#picks .swiper-slide {
+    gap: 80px;
+}
+
+#about .about-inner {
+  width: 1520px;
+}
+
+#info-sections .inner {
+    width: 1520px;
+}
+
+#instagram .inner {
+    width: 1520px;
+}
+
+#instagram .instagram-swiper {
+    max-width: 1520px;
+}
+
+    #instagram .swiper-button-prev, #instagram .swiper-button-next{
+     display: none;
+    }
+
+       #instagram .swiper-wrapper {
+        gap: 24px;
+        margin-left: 100px;
+    }
+    
+
+}
