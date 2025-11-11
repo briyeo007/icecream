@@ -2834,6 +2834,10 @@ justify-items: center;
     gap: 80px;
 }
 
+#about {
+        height: 612px;
+    }
+
 #about .about-inner {
   width: 1520px;
 }
