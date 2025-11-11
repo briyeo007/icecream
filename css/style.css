@@ -2770,7 +2770,7 @@ footer .social {
       header .menu-container nav {
         padding: 40px 400px;
         width: 100%;
-        left: 88.746%;
+        left: 90.746%;
     }
 
     .hero-text p {
@@ -2810,6 +2810,7 @@ justify-items: center;
 #commitment .swiper-wrapper {
     display: flex;
     flex-direction: row;
+   
 }
 
 #commitment .swiper-slide {
@@ -2886,7 +2887,7 @@ justify-items: center;
   justify-content: space-between; /* 텍스트 왼쪽, 이미지 오른쪽 */
   align-items: center;            /* ✅ 이미지와 텍스트를 수직 중앙선에 맞춤 */
   gap: 80px;
-  width: 86.979%;
+  width: 1259px;
   margin: 120px auto;
 }
 
@@ -2906,6 +2907,7 @@ justify-items: center;
 
 #events {
   gap: 80px;
+  width: 1217px;
 }
 
 #events .promise-event {
@@ -2918,12 +2920,16 @@ justify-items: center;
 }
 
 #info-sections .inner {
-    width: 1264px;
+    width: 1520px;
 }
 
 #instagram .inner {
     width: 1520px;
 }
+
+    #instagram .thumb img {
+        width: 257px;
+      }
 
 #instagram .instagram-swiper {
     max-width: 1520px;
@@ -2936,6 +2942,13 @@ justify-items: center;
        #instagram .swiper-wrapper {
         justify-content: center;
     }
+
+    .contact-us form {
+      width: 610px;
+    }
     
+    .contact-us input {
+      width: 480px;
+    }
 
 }
