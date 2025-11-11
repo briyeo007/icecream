@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ✅ 아래는 스와이퍼 (기존 그대로)
   new Swiper("#commitment .swiper", {
-    slidesPerView: 1,
+    slidesPerView: "auto",
     centeredSlides: true,
     loop: false,
     spaceBetween: 16,
@@ -82,8 +82,8 @@ new Swiper("#picks .picks-swiper", {
       spaceBetween: 17,
     },
     1600: {
-      slidesPerView: 4,
-      spaceBetween: 24,
+      slidesPerView: 3,
+      spaceBetween: 17,
     }
   },
 });

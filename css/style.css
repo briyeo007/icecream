@@ -309,8 +309,8 @@ font-style: normal;
   letter-spacing: 0.01em;
   text-align: center;
   word-break: keep-all;
-  max-width: 200px;
   margin: 0 auto;
+  width: 134px;
   opacity: 0.9; /* 글자 대비를 살짝 줄여서 자연스럽게 */
 }
 
@@ -353,7 +353,7 @@ font-style: normal;
 #commitment .swiper-button-next {
  width: 10px;
 height: 50px;
-  top: calc(50% - 10px);
+  top: 60%;
   color: #6B4F4F;
 }
 
@@ -2043,7 +2043,7 @@ font-style: normal;
    #commitment .swiper-slide {
     display: flex;
     flex-direction: row;
-    width:auto !important;
+
     height:auto;
     align-items:center;
     justify-content:flex-start;
@@ -2762,15 +2762,16 @@ footer .social {
   .header {
     width: 1520px;
   }
+
+  #hero .inner{
+    width: 1434px;
+  }
+
       header .menu-container nav {
         padding: 40px 400px;
         width: 100%;
         left: 88.746%;
     }
-    #hero .inner {
-      width: 1520px;
-    
-}
 
     .hero-text p {
         font-size: 18px;
@@ -2780,17 +2781,35 @@ footer .social {
         word-break: keep-all;
     }
 
+    .hero-image {
+      width: 578px;
+      height: 595px;
+      bottom: 5%;
+    }
+
   #commitment {
-    width: 1520px;
+    width: 1434px;
+justify-items: center;
+}
+
+#commitment .commit-text {
+  justify-items:center;
+  margin-left: 0;
+}
+
+    #commitment h3 {
+     text-align: center;
+    }
+
+#commitment  .swiper-slide p {
+  text-align: center;
+  width: 300px;
 
 }
 
 #commitment .swiper-wrapper {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
-    gap: 64px;
-    margin-left: 150px;
 }
 
 #commitment .swiper-slide {
@@ -2798,13 +2817,16 @@ footer .social {
   flex-direction: column;
 }
 
+
+
 #picks .our-pick {
     width: 1520px;
+    justify-items: center;
 }
 
+
 #picks .swiper-wrapper {
-  margin-left: 70px;
-  gap: 80px;
+  justify-content: space-between;
 }
 
 #picks .swiper-slide {
