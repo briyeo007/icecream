@@ -83,7 +83,7 @@ new Swiper("#picks .picks-swiper", {
     },
     1600: {
       slidesPerView: 3,
-      spaceBetween: 17,
+      spaceBetween: 80,
     }
   },
 });
