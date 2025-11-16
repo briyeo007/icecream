@@ -1322,7 +1322,7 @@ margin-bottom: 10px;
 #picks .swiper-button-next {
  width: 10px;
 height: 50px;
-  top: calc(50% - 10px);
+  top: calc(50% + 20px);
   color: #6B4F4F;
 }
 
@@ -1417,7 +1417,7 @@ line-height: 1;
     display:block;
      width: 87.724%;
     height:359px;  /* 스샷 높이감 */
-    margin-left: 20%;
+    margin-left: 15%;
     background-position: center center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -1561,7 +1561,7 @@ line-height: 1;
     align-items: flex-start; /* span, h3, p, 버튼 전부 왼쪽 */
     text-align: left;      /* 내부 글씨는 중앙 */
     width: fit-content;
-    margin-left: 25%;         /* 이미지 왼쪽 라인에 맞추는 핵심 */
+    margin-left: 17%;         /* 이미지 왼쪽 라인에 맞추는 핵심 */
   }
 
 #events .promise-event span {
@@ -1805,7 +1805,7 @@ margin-bottom: 40px;
 }
 
 .contact-us form {
-  width: 60%;
+  width: 66.6%;
   position: relative;
   margin: 0 auto ;
 }
