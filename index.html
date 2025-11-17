@@ -7,8 +7,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script defer src="js/main.js"></script>
 </head>
@@ -47,7 +48,7 @@
   <main>
     <section id="hero">
       <div class="inner">
-        <div class="hero-text">
+        <div class="hero-text" >
           <span>세계 최고의 아이스크림</span>
           <h2>EARNEST ICE CREAM</h2>
           <p>
@@ -65,7 +66,7 @@
 
   <!-- Swiper -->
   <section id="commitment"> 
-    <div class="commit-first"> 
+    <div class="commit-first" data-aos="fade-right"> 
       <p>우리는 다음을 위해 최선을 다합니다</p> 
       <h2>We are committed to</h2> 
     </div>
@@ -117,7 +118,7 @@
   <!-- Our Picks -->
   <section id="picks">
     <div class="our-pick">
-      <div class="picks">
+      <div class="picks" data-aos="flip-left">
         <p>추천맛섹션</p>
         <h2>Our Picks</h2>
       </div>
@@ -168,7 +169,7 @@
 
   <!-- About -->
   <section id="about">
-    <div class="about-inner">
+    <div class="about-inner" data-aos="zoom-in">
       <p>우리의 관해서</p>
       <h2>About Us</h2>
       <strong>작은 한 스쿱이 사람들을 웃게 하고, 함께하는 순간을 더 특별하게 만드는 힘을 믿습니다.</strong>
@@ -189,7 +190,7 @@
       <!-- Our Promise -->
       <div id="our-promise">
         <span class="bg_our-promise"></span>
-        <div class="promise-text">
+        <div class="promise-text" data-aos="zoom-out-left">
           <span>우리의 약속</span>
           <h3>Our Commitment</h3>
           <strong>이러한 약속을 다음과 같이 이행합니다:</strong>
@@ -205,7 +206,7 @@
       <!-- Community -->
       <div id="community">
           <span class="bg_community"></span>
-          <div class="promise-community">
+          <div class="promise-community" data-aos="zoom-out-right">
             <span>커뮤니티</span>
             <h3>Community</h3>
             <p>
@@ -220,7 +221,8 @@
       <!-- Events -->
       <div id="events">
           <span class="bg_events"></span>
-          <div class="promise-event">
+          <div class="promise-event" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
             <span>이벤트</span>
             <h3>Events</h3>
             <p>
@@ -317,6 +319,9 @@
       <p>Earnest Ice Cream © 2025</p>
     </div>
   </footer>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
