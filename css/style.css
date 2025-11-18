@@ -2587,24 +2587,24 @@ line-height: 1;
 
   #instagram .instagram-swiper {
     overflow: hidden; 
-    max-width: 810px;
+    max-width: 825px;
   }
 
   #instagram .instagram-swiper .swiper-slide{ 
-    width:284px; 
-    flex:0 0 284px; 
+    width:256px; 
+    flex:0 0 256px; 
   }
 
   #instagram .swiper-slide{ /* 한 장 크기 고정 */
-    flex: 0 0 284px !important;
+    flex: 0 0 256px;
     display: flex;
     justify-content: center;
   }
 
   #instagram .thumb {
-    width: 284px;
+    width: 256px;
     height: 284px;
-    border-radius: 6px;
+    border-radius: 6px; 
     overflow: hidden;
   }
 
@@ -2616,7 +2616,7 @@ line-height: 1;
   }
 
   #instagram .swiper-slide, #instagram .thumb {
-    height:284px;
+    height:256px;
   }
 
   #instagram .swiper-wrapper {
@@ -2953,6 +2953,7 @@ justify-items: center;
 
        #instagram .swiper-wrapper {
         justify-content: center;
+        gap: 23px
     }
 
     .contact-us form {
