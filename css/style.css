@@ -123,6 +123,7 @@ header .menu-container.active {
 
 main {
   margin-top: 100px;
+  overflow: hidden;
 }
 
 /* Hero */
@@ -1855,6 +1856,10 @@ footer p span {
   margin-bottom: 5px;
 }
 
+footer .time {
+  margin-bottom: 8px;
+}
+
 footer .social {
   margin-top: 10px ;
 }
@@ -2288,7 +2293,7 @@ line-height: 1;
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    margin-bottom: 23px;
+    margin-bottom: 0;
   }
 
   .bg_community {
@@ -2300,6 +2305,7 @@ line-height: 1;
     background-position: center center;
     background-size:cover;
     background-repeat:no-repeat;
+    margin-bottom: 0;
   }
 
   .bg_events {
@@ -2311,6 +2317,7 @@ line-height: 1;
     background-size:cover;
     background-repeat:no-repeat;
     margin-right: 0;
+    margin-bottom: 0;
   }
 
   #info-sections {
@@ -2638,11 +2645,11 @@ height: 50px;
 }
 
 #instagram .swiper-button-prev {
-  left: -10px;
+  left: 5px;
 }
 
 #instagram .swiper-button-next {
-  right: -10px;
+  right: 5px;
 }
 
 /* 아이콘 크기 */
@@ -2747,6 +2754,10 @@ footer p span {
   font-size: 18px;
   line-height: 20px;
   margin-bottom: 10px;
+}
+
+footer .time {
+  margin-bottom: 8px;
 }
 
 footer .social {
@@ -2891,7 +2902,7 @@ justify-items: center;
   justify-content: space-between; /* 텍스트 왼쪽, 이미지 오른쪽 */
   align-items: center;            /* ✅ 이미지와 텍스트를 수직 중앙선에 맞춤 */
   gap: 80px;
-  width: 1450px;
+  width: 1300px;
   margin: 120px auto;
 }
 
@@ -2964,4 +2975,7 @@ justify-items: center;
       width: 480px;
     }
 
+    footer .time {
+  margin-bottom: 8px;
+}
 }
