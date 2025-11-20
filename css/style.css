@@ -177,7 +177,7 @@ main {
   position: absolute;
   right: 0;
   bottom: 25.2%;
-   left: 50%;
+   left: 0;
   transform: translateX(-50%);
   background: url("../images/icecream.png") no-repeat center/contain;
   background-size: contain;
@@ -1104,7 +1104,7 @@ footer .social a[href*="tiktok"] {
   /* color: #000; */
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.333;
   width: 50%;
   word-break: keep-all;
 }
@@ -1646,7 +1646,7 @@ line-height: 1;
 
   #picks .swiper-pagination {
     bottom:18px;
-    margin-top:30px;
+    margin-top:20px;
   }
 
   button:not(.menu-toggle),
@@ -1695,18 +1695,18 @@ line-height: 1;
 
 
   #instagram .instagram-swiper {
-    max-width:592px; 
+    max-width:530px; 
     overflow: hidden; 
   }
 
   #instagram .instagram-swiper .swiper-slide{ 
     width: 100% ; 
-    flex:0 0 284px ; 
+    flex:0 0 250px ; 
 
   }
 
   #instagram .swiper-slide{ /* 한 장 크기 고정 */
-    flex: 0 0 284px ;
+    flex: 0 0 250px ;
     display: flex;
     justify-content: center;
     
@@ -1714,19 +1714,19 @@ line-height: 1;
 
   #instagram .swiper-slide, #instagram .thumb {
     width: 250px;
-      height: 284px;
+      height: 246px;
   }
 
   #instagram .thumb {
-    width: 284px;
-    height: 284px;
+    width: 250px;
+    height: 246px;
     border-radius: 6px;
     overflow: hidden;
   }
 
   #instagram .thumb img{
-    width: 284px;
-    height: 284px;
+    width: 250px;
+    height: 246px;
     object-fit: cover;
     display: block;
   }
@@ -1750,11 +1750,11 @@ height: 50px;
 }
 
 #instagram .swiper-button-prev {
-  left: 10px;
+  left: 30px;
 }
 
 #instagram .swiper-button-next {
-  right: 10px;
+  right: 30px;
 }
 
 /* 아이콘 크기 */
@@ -1858,6 +1858,7 @@ footer p span {
 
 footer .time {
   margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 footer .social {
@@ -1977,7 +1978,7 @@ header .menu-toggle {
   /* color: #000; */
   font-size: 18px;
   font-weight: 400;
-  line-height: 1.45;
+  line-height: 1.333;
   width: 60%;
   word-break: keep-all;
 }
@@ -2144,7 +2145,7 @@ font-style: normal;
 #picks .picks-swiper {
   position: relative;
   overflow: visible; /* ✅ 점과 화살표가 잘리지 않게 */
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 
@@ -2477,7 +2478,7 @@ line-height: 1;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   text-align: left;
   width: 368px;
   margin-left: 0;
@@ -2758,6 +2759,7 @@ footer p span {
 
 footer .time {
   margin-bottom: 8px;
+  margin-top: 20px;
 }
 
 footer .social {
@@ -2784,7 +2786,7 @@ footer .social {
     .hero-text p {
         font-size: 18px;
         font-weight: 400;
-        line-height: 1.45;
+        line-height: 1.333;
         width: 484px;
         word-break: keep-all;
     }
@@ -2977,5 +2979,6 @@ justify-items: center;
 
     footer .time {
   margin-bottom: 8px;
+  margin-top: 20px;
 }
 }
