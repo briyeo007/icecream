@@ -2835,6 +2835,13 @@ justify-items: center;
     justify-items: center;
 }
 
+#picks a {
+    width: 90%
+}
+
+#picks .picks-swiper {
+  width: 1156px;
+}
 
 #picks .swiper-wrapper {
   justify-content: space-between;
